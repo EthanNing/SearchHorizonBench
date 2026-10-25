@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-18T11:36:34.513450+00:00",
+  "protocol": {
+    "created_utc": "2026-10-18T10:50:05.825435+00:00",
+    "classification": "Retrospective transfer check on completed outcomes; zero new actor executions.",
+    "question": "Does the frozen text-value baseline retain its behavior after changing from Tavily to DeepSeek search and its tool schema?",
+    "population": "Matched eighty-question 8192-token/three-search DeepSeek-backend test frame; original five strata and support components.",
+    "predictions": "Reuse all four neural and guarded prediction rows by task identity, verifying identical question text. Preserve source parameters, outputs and source-constant prior. No reward refitting or new model inference.",
+    "cost_thresholds": "Primary source-cost rule retains the source training mean extra actor tokens. A secondary target-cost rule uses the mean from the forty target development questions. Both retain the same value predictions.",
+    "evaluation": "Four fixed scoring endpoints; all eighty and source-supported questions. Compare against target constants, source constants, target raw forecasts and the source120 affine probability map. Report all five fixed token valuations. The numerical comparator forecasts retain their separate API acquisition cost; routing is evaluated for the four text heads.",
+    "inference": "10,000 support-component bootstrap replicates, with paired differences. This follows a partial positive source result and supplies exploratory transfer evidence. All fixed methods and cost rules remain reported.",
+    "cost_scope": "API-token utility charges actual actor tokens. Local CPU prediction cost is reported in the source study and is outside this token valuation.",
+    "resources": {
+      "new_model_API_calls": 0,
+      "new_search_calls": 0,
+      "new_actor_outcomes": 0
+    }
+  },
+  "predictions": {
+    "finetuned_probabilities": "baseline_predictions/trainable_transfer__finetuned_probabilities.jsonl",
+    "finetuned_gain": "baseline_predictions/trainable_transfer__finetuned_gain.jsonl",
+    "guarded_finetuned_probabilities": "baseline_predictions/trainable_transfer__guarded_finetuned_probabilities.jsonl",
+    "guarded_finetuned_gain": "baseline_predictions/trainable_transfer__guarded_finetuned_gain.jsonl"
+  },
+  "baseline": "budget_test_t8192_s3__Flash_probability_baseline.json",
+  "checks": [
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_flash_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_pro_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_paired_judges",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "raw_em",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_flash_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_pro_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_paired_judges",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "raw_em",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_flash_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_pro_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_paired_judges",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "raw_em",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_flash_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_pro_v1",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_paired_judges",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "raw_em",
+      "means_match": true,
+      "intervals_match": true
+    }
+  ],
+  "cost_means": {
+    "source": 5141.397916666667,
+    "target": 7007.49375
+  },
+  "new_actor_outcomes": 0,
+  "scope": "Matched retrospective backend transfer; reuse budget-study outcome and input files."
+}

@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "Please cite SearchHorizonBench when using this benchmark or its evaluation code."
+title: "SearchHorizonBench: A Benchmark for Search Value in AI Agents"
+type: dataset
+authors:
+  - family-names: Ning
+    given-names: Jingjie
+    email: jening@cs.cmu.edu
+    affiliation: Carnegie Mellon University
+  - family-names: Li
+    given-names: Xueqi
+    email: xueqil@cs.cmu.edu
+    affiliation: Carnegie Mellon University
+  - family-names: Kong
+    given-names: Yibo
+    email: yibok@cs.cmu.edu
+    affiliation: Carnegie Mellon University
+date-released: 2026-10-25
+url: "https://ethanning.github.io/SearchHorizonBench/"
+keywords:
+  - AI agents
+  - agentic search
+  - search value
+  - benchmark
+  - counterfactual evaluation
+preferred-citation:
+  type: article
+  title: "SearchHorizonBench: A Benchmark for Search Value in AI Agents"
+  authors:
+    - family-names: Ning
+      given-names: Jingjie
+    - family-names: Li
+      given-names: Xueqi
+    - family-names: Kong
+      given-names: Yibo
+  year: 2026
+  url: "https://ethanning.github.io/SearchHorizonBench/"

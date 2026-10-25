@@ -1,0 +1,9 @@
+{
+  "public_probes": "public_probes.jsonl",
+  "reward_frames": "../cost_confirmation/{endpoint}_draws.jsonl",
+  "normalization": "search_horizon.analysis.normalize",
+  "probe_cost": "The two selected THINK probe token counts are summed and charged before the independent continuation.",
+  "signal": "Two valid nonempty normalized answers agree. Empty, UNKNOWN and failed outputs disagree.",
+  "evaluation": "Four draws per action provide all 36 disjoint two-of-four pairs.",
+  "source": "Retrospective replay of fixed outcomes; public probe answers are newly generated information for a deployed policy and incur their recorded cost."
+}

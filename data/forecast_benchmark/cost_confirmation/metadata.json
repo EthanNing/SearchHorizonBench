@@ -1,0 +1,3516 @@
+{
+  "created_utc": "2026-10-18T18:34:47.064983+00:00",
+  "study": "cost_transfer_confirmation",
+  "frames": {
+    "semantic_flash_v1": {
+      "draws": "semantic_flash_v1_draws.jsonl",
+      "inputs": "semantic_flash_v1_inputs.jsonl"
+    },
+    "semantic_pro_v1": {
+      "draws": "semantic_pro_v1_draws.jsonl",
+      "inputs": "semantic_pro_v1_inputs.jsonl"
+    },
+    "semantic_paired_judges": {
+      "draws": "semantic_paired_judges_draws.jsonl",
+      "inputs": "semantic_paired_judges_inputs.jsonl"
+    },
+    "raw_em": {
+      "draws": "raw_em_draws.jsonl",
+      "inputs": "raw_em_inputs.jsonl"
+    }
+  },
+  "predictions": {
+    "finetuned_gain": "predictions/finetuned_gain.jsonl",
+    "finetuned_probabilities": "predictions/finetuned_probabilities.jsonl",
+    "guarded_finetuned_gain": "predictions/guarded_finetuned_gain.jsonl",
+    "guarded_finetuned_probabilities": "predictions/guarded_finetuned_probabilities.jsonl",
+    "raw": "predictions/raw.jsonl",
+    "source120_constant": "predictions/source120_constant.jsonl",
+    "source120_effect_affine": "predictions/source120_effect_affine.jsonl",
+    "source120_effect_offset": "predictions/source120_effect_offset.jsonl",
+    "source120_effect_ridge": "predictions/source120_effect_ridge.jsonl",
+    "source120_probability_affine": "predictions/source120_probability_affine.jsonl",
+    "source120_probability_offset": "predictions/source120_probability_offset.jsonl",
+    "target40_constant": "predictions/target40_constant.jsonl",
+    "target40_effect_affine": "predictions/target40_effect_affine.jsonl",
+    "target40_effect_offset": "predictions/target40_effect_offset.jsonl",
+    "target40_effect_ridge": "predictions/target40_effect_ridge.jsonl",
+    "target40_probability_affine": "predictions/target40_probability_affine.jsonl",
+    "target40_probability_offset": "predictions/target40_probability_offset.jsonl"
+  },
+  "baseline_files": {
+    "source120": "source120_baseline.json",
+    "target40": "target40_baseline.json"
+  },
+  "cost_rules": "cost_rules.json",
+  "cohort": {
+    "created_utc": "2026-10-18T16:26:39.415935+00:00",
+    "ready": true,
+    "questions": 1632,
+    "strata": {
+      "hotpot_bridge": 400,
+      "hotpot_comparison": 400,
+      "musique_2": 400,
+      "musique_3": 400,
+      "musique_4": 32
+    },
+    "actor_outcomes_at_seal": 0,
+    "planned_actor_outcomes": 13056,
+    "support_components": 1081,
+    "largest_component": 67,
+    "fully_selection_page_disjoint": {
+      "hotpot_bridge": 400,
+      "hotpot_comparison": 400,
+      "musique_2": 400,
+      "musique_3": 282,
+      "musique_4": 1
+    },
+    "primary_population": "Equal-weight mean of five stratum means. Each stratum contributes 0.2 regardless of its acquired question count. The target preserves the original balanced task mixture with unequal sampling precision.",
+    "human_ratings": 0
+  },
+  "registration": {
+    "created_utc": "2026-10-18T11:23:23.433431+00:00",
+    "classification": "Prospective confirmation of a frozen transferred one-decision policy on new questions; local timestamped protocol.",
+    "motivation": "The completed retrospective target-backend analysis shows a positive utility contrast against always SEARCH and a matched-rate random mixture. The original source-condition advancement gate remains failed. This confirmation targets the distinct backend-transfer policy with a target-experience cost threshold.",
+    "hypothesis": "A fixed text gain predictor trained on source executions, combined with a target-development cost estimate, improves API-token utility over both constant actions on new target-backend questions.",
+    "questions": {
+      "target": 1000,
+      "per_stratum": 200,
+      "strata": [
+        "hotpot_bridge",
+        "hotpot_comparison",
+        "musique_2",
+        "musique_3",
+        "musique_4"
+      ],
+      "identity": "Every candidate question is absent from prior native node files. All candidate support pages are disjoint from the original 120 model-training questions.",
+      "selection_pages": "Within each stratum, ranks prioritize pages absent from the prior 400-question method-selection cohort, then include remaining training-disjoint candidates. Report actual overlap and the fully selection-page-disjoint sensitivity. This distinction is fixed before qualification.",
+      "selection": "Take the first 200 eligible questions per stratum by frozen rank. Qualify initial batches of 400 per stratum, with 600 for four-hop questions; use the ordered reserve if needed. Resolve qualification before any new actor outcome. A deficit after exhausting the pool stops actor acquisition.",
+      "reference_eligibility": "Require a reference-hidden Flash solution with valid evidence quotes, supported reference checks from Flash and Pro, and a context-isolated AI canonical-reference audit classified supported. The hidden answer must match the canonical answer or pass masked semantic equivalence. Retain all rejections. Independent audits assess aliases before accepted answer variants are frozen.",
+      "human_ratings": 0
+    },
+    "primary_policy": {
+      "method": "finetuned_gain",
+      "model": "Frozen gain.pt from trainable_value_baseline_v2",
+      "target_cost_mean_extra_tokens": 7007.49375,
+      "token_penalty_per1000": 0.005,
+      "decision": "SEARCH iff the frozen gain exceeds 0.005 times the fixed target-development mean extra tokens divided by 1000. Ties choose THINK.",
+      "new_reward_or_parameter_fitting": false
+    },
+    "execution": {
+      "actor": "deepseek-flash",
+      "checkpoint": 0,
+      "backend": "DeepSeek native search",
+      "completion_tokens": 8192,
+      "search_limit": 3,
+      "draws_per_action": 4,
+      "new_outcomes": 8000,
+      "tool_contract": "Reuse the target budget-study request schema, one tool call per reply, shared total completion envelope, and cached exact retrieval queries.",
+      "failures": "Keep algorithmic terminal failures at zero. Preserve transport attempts and repair pending work before complete-frame analysis."
+    },
+    "frozen_predictions": "After reference eligibility, freeze all four neural/guarded predictions and both source/target cost rules before any actor request. Obtain Flash raw probability forecasts before actor outcomes and apply the existing source120 and target40 numerical fits without new reward fitting.",
+    "primary_endpoint": "Flash frozen-reference equivalence, with masked Pro, paired-judge and normalized-EM secondary endpoints. Blank, UNKNOWN and failed delivery retain zero reward.",
+    "primary_success_rule": "At lambda 0.005, both utility contrasts against always THINK and always SEARCH must have one-sided 97.5% lower bounds above zero. Also require the one-sided 97.5% lower bound for success minus always SEARCH above -0.01. Report all criteria independently.",
+    "secondary": "Matched-rate random mixture, probability/gain risks, source-cost threshold, probability heads, guarded heads, raw forecasts and fixed numerical maps. All five existing token valuations, every stratum, the selection-page-disjoint subset, independent endpoints and reference bounds remain reported.",
+    "inference": "Question-weighted means and 10000 support-component bootstrap draws. Recompute the matched random fraction within each bootstrap sample. Report actual support-component counts. Draws do not increase independent question N. Use the exact frozen endpoint and policy definitions throughout.",
+    "power": {
+      "created_utc": "2026-10-18T11:07:54.983804+00:00",
+      "classification": "Planning from the retrospective matched-backend pilot; no fresh outcomes.",
+      "pilot_questions": 80,
+      "planning_effects": [
+        0.015,
+        0.02,
+        0.03
+      ],
+      "comparisons": {
+        "THINK": {
+          "mean": 0.035304546874999995,
+          "paired_question_sd": 0.2122479294059522,
+          "N_for_80percent_power_one_sided_alpha_025": {
+            "0.015": 1572,
+            "0.02": 884,
+            "0.03": 393
+          }
+        },
+        "SEARCH": {
+          "mean": 0.020849859375000005,
+          "paired_question_sd": 0.10269836869374971,
+          "N_for_80percent_power_one_sided_alpha_025": {
+            "0.015": 368,
+            "0.02": 207,
+            "0.03": 92
+          }
+        }
+      }
+    },
+    "cost_scope": "Token utility prices actor and any API forecast tokens. The primary text head makes zero inference API calls; measure CPU prediction time separately. Qualification and research counterfactual collection are acquisition expenses.",
+    "resources": {
+      "model_attempt_cap": 60000,
+      "search_attempt_cap": 15000,
+      "ledger_root": "runs/cost_transfer_confirmation_v1",
+      "accounting": "Use a separate campaign ledger and cache so the existing Qwen campaign retains its owner and caps. Credentials are read from the existing project configuration and are not copied into this run. Aggregate usage by ledger namespace.",
+      "ledger_path": "runs/cost_transfer_confirmation_v1/runs/attempts.jsonl",
+      "layout_recorded_utc": "2026-10-18T11:26:06.844991+00:00"
+    },
+    "registration_actor_outputs": 0,
+    "model_and_threshold_freeze": "2026-10-18T11:23:23.433521+00:00",
+    "seed": 2026101815,
+    "scope": "One native bounded continuation decision on new reference-supported English multi-hop questions. This study supplies no repeated-decision deployment claim."
+  },
+  "sampling_amendment": {
+    "created_utc": "2026-10-18T15:33:09.567427+00:00",
+    "classification": "Prospective sampling amendment before any new actor outcome or policy forecast on the candidate pool.",
+    "original_protocol": "registration.json remains unchanged and retained.",
+    "reason": "All 865 four-hop candidates completed provider reference qualification; 145 passed, so the original 200-per-stratum quota is impossible under the fixed reference criteria. Independent reference review remains mandatory.",
+    "observed_evidence": {
+      "created_utc": "2026-10-18T11:53:46.460913+00:00",
+      "cases_with_three_stage_outputs": 3865,
+      "provider_eligible": 1536,
+      "eligible_by_stratum": {
+        "musique_3": 357,
+        "musique_2": 424,
+        "hotpot_bridge": 323,
+        "musique_4": 145,
+        "hotpot_comparison": 287
+      },
+      "independent_AI_reference_review_complete": false,
+      "actor_outcomes": 0
+    },
+    "actor_outputs_at_amendment": 0,
+    "sample": {
+      "hotpot_bridge": 400,
+      "hotpot_comparison": 400,
+      "musique_2": 400,
+      "musique_3": 400,
+      "musique_4": "All independently source-supported cases from the complete original four-hop pool."
+    },
+    "selection": "For the four fixed-size strata, take the first 400 jointly eligible questions by original frozen rank. Audit the complete four-hop provider shortlist and retain every independently eligible case. Keep all original questions, page-disjoint rules, models, thresholds, endpoints, and success criteria. Complete qualification and freeze the selected cohort before forecasts and actors.",
+    "primary_target": "Equal-weight mean of five stratum means. Each stratum contributes 0.2 regardless of its acquired question count. The target preserves the original balanced task mixture with unequal sampling precision.",
+    "inference": "Sample the original support components with replacement, preserving components that cross strata. Within every bootstrap replicate, recompute each stratum mean with its sampled question multiplicities, then average the five means equally. Report 10000 draws and the actual component structure. The random-mixture comparator matches the weighted search rate in every replicate.",
+    "secondary": "Report question-weighted pooled scores, all five stratum scores, selection-page-disjoint views, all registered endpoints, policies, token valuations, and source-reference bounds. These views preserve their explicit target populations.",
+    "power": {
+      "assumptions": "Planning uses sixteen retrospective pilot questions per stratum. The calculations assume independent questions and may understate component dependence or variance after reference qualification. Final precision is measured on the complete frozen cohort.",
+      "scenarios": [
+        {
+          "four_hop_eligible": 25,
+          "total_questions": 1625,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.009436026420898363,
+              "illustrative_80_percent_MDE": 0.026435971620788853
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.007481319861366412,
+              "illustrative_80_percent_MDE": 0.02095966572360414
+            }
+          }
+        },
+        {
+          "four_hop_eligible": 40,
+          "total_questions": 1640,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.007886550259719604,
+              "illustrative_80_percent_MDE": 0.022094959207630445
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.005968926017934839,
+              "illustrative_80_percent_MDE": 0.016722543131846245
+            }
+          }
+        },
+        {
+          "four_hop_eligible": 60,
+          "total_questions": 1660,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.006876485511490971,
+              "illustrative_80_percent_MDE": 0.019265161808993105
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.004932233604516929,
+              "illustrative_80_percent_MDE": 0.013818145666414629
+            }
+          }
+        },
+        {
+          "four_hop_eligible": 80,
+          "total_questions": 1680,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.006311120501549323,
+              "illustrative_80_percent_MDE": 0.017681235197140585
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.004321614697135708,
+              "illustrative_80_percent_MDE": 0.0121074357354954
+            }
+          }
+        },
+        {
+          "four_hop_eligible": 100,
+          "total_questions": 1700,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.005946154671909801,
+              "illustrative_80_percent_MDE": 0.016658746928822497
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.00390973256720755,
+              "illustrative_80_percent_MDE": 0.010953506760288672
+            }
+          }
+        },
+        {
+          "four_hop_eligible": 145,
+          "total_questions": 1745,
+          "utility_contrasts": {
+            "THINK": {
+              "illustrative_SE": 0.005459254680673204,
+              "illustrative_80_percent_MDE": 0.015294647913374048
+            },
+            "SEARCH": {
+              "illustrative_SE": 0.0033282585241432828,
+              "illustrative_80_percent_MDE": 0.00932444908123982
+            }
+          }
+        }
+      ]
+    },
+    "resources": {
+      "model_attempt_cap": 100000,
+      "search_attempt_cap": 24000,
+      "concurrency": 64,
+      "new_Tavily_calls": 0,
+      "reason": "The amended cohort requires 8 executions per selected question and at most 3 searches per SEARCH draw. Acquisition, forecasts, judgments, retries and independent reference qualification share the study ledger."
+    },
+    "reference_quality": "All existing qualification and independent source-support criteria remain in force. Aliases require equivalent verdicts; failures and rejected references stay retained.",
+    "round3_cumulative_rank_limits": {
+      "hotpot_bridge": 800,
+      "hotpot_comparison": 800,
+      "musique_2": 1600,
+      "musique_3": 2600
+    },
+    "round3_added_candidates": 2800,
+    "human_ratings": 0
+  },
+  "analysis_protocol": {
+    "created_utc": "2026-10-18T15:44:18.491155+00:00",
+    "primary": "Flash reference-equivalence endpoint, equal five-stratum weights, frozen finetuned_gain head, fixed target40 extra actor-token mean, lambda 0.005.",
+    "inference": "10000 component bootstrap draws with seed 2026101815. Draw components globally, preserving cross-stratum memberships; normalize weights within each stratum to 0.2. Redraw empty-stratum bootstrap replicates and report their count.",
+    "criteria": "Both utility lower bounds above zero, plus success-minus-always-SEARCH lower bound above -0.01; all use one-sided 97.5% bounds.",
+    "secondaries": "Question-weighted pool, each stratum, selection-page-disjoint views, four endpoints, all source-trained and previously fitted numerical maps, source and target cost rules, five existing token valuations, matched-rate random control, and shared-judge bounds.",
+    "cost": "Primary CPU head has zero inference API tokens; time CPU inference separately. Raw and corrected API forecasts charge reported forecast tokens per question, constants charge zero inference tokens. Acquisition is separate.",
+    "scope": "Prospective one-decision saved-branch comparison on newly acquired questions and actor draws.",
+    "actor_outputs": 0
+  },
+  "checks": [
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_flash_v1",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_pro_v1",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "semantic_paired_judges",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "equal_strata",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "source",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.0,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.001,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.01,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.02,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "guarded_finetuned_gain",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "guarded_finetuned_probabilities",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "raw",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "source120_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_constant",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_effect_ridge",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_probability_affine",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "forecast",
+      "means_match": true,
+      "intervals_match": true
+    },
+    {
+      "endpoint": "raw_em",
+      "weighting": "questions",
+      "method": "target40_probability_offset",
+      "kind": "policy",
+      "cost_rule": "target",
+      "penalty": 0.005,
+      "means_match": true,
+      "intervals_match": true
+    }
+  ],
+  "inference_addendum": {
+    "created_utc": "2026-10-18T16:30:03.900771+00:00",
+    "basis": "runs/cost_transfer_confirmation_v1/cohort_inference_audit.json",
+    "timing": "Cohort metadata examined after actor acquisition started and before reading any outcome or judgment. The audit records 86 existing actor result files at that time.",
+    "change": "Preserve point estimates and shared-label identification ranges for every registered view. Withhold bootstrap confidence bounds and pass/fail inference when a fixed-weight stratum has fewer than two observed support components. Apply the same rule to single-stratum views.",
+    "affected_registered_view": "selection_page_disjoint_equal_strata: four-hop question count 1, component count 1.",
+    "primary_analysis_changed": false,
+    "sampling_or_prediction_changed": false,
+    "private_outcome_labels_read": false,
+    "full_cohort_components": {
+      "hotpot_bridge": {
+        "questions": 400,
+        "support_components": 398
+      },
+      "hotpot_comparison": {
+        "questions": 400,
+        "support_components": 371
+      },
+      "musique_2": {
+        "questions": 400,
+        "support_components": 232
+      },
+      "musique_3": {
+        "questions": 400,
+        "support_components": 97
+      },
+      "musique_4": {
+        "questions": 32,
+        "support_components": 15
+      }
+    },
+    "code": "scripts/analyze_cost_transfer_confirmation.py",
+    "original_analysis_protocol_retained": true
+  },
+  "public_input": "Predict from the input object. Identifiers join records. Strata, support components, outcomes, references, resource records and selection-page flags are evaluator metadata.",
+  "weighting": "The primary comparison weights five strata equally; question-weighted scores are secondary. Preserve shared support components and answer-case identities.",
+  "cost": "Supplied inference_API_tokens are charged in standalone policy scoring. CPU inference time and acquisition expenses remain separate.",
+  "measurement": "Four reference-equivalence/EM endpoints; shared unresolved answers retained. All reference reviews and judgments are AI assessments; zero human labels.",
+  "scope": "One prospective frozen policy comparison on new questions. Further methods fitted to these outcomes require an independent test frame."
+}

@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-10-24T07:21:10.343485+00:00",
+  "classification": "Post-primary exploratory developer-frame horizon diagnostic; no formal-test or controller claim.",
+  "tasks": 32,
+  "new_outcomes": 128,
+  "completion_budget_each_policy": 8192,
+  "statuses": {
+    "ok": 103,
+    "invalid_output": 25
+  },
+  "quality": {
+    "STOP": {
+      "mean": 0.20106421356421356,
+      "bootstrap95": [
+        0.09187675070028012,
+        0.33404061624649856
+      ]
+    },
+    "SEARCH1": {
+      "mean": 0.1532246833028083,
+      "bootstrap95": [
+        0.08423844537815126,
+        0.23242384453781512
+      ]
+    },
+    "SEARCH3": {
+      "mean": 0.11465210137085137,
+      "bootstrap95": [
+        0.06328801406926407,
+        0.20958274976657332
+      ]
+    }
+  },
+  "quality_SEARCH3_vs_SEARCH1": {
+    "mean": -0.03857258193195693,
+    "bootstrap95": [
+      -0.0712548735986236,
+      0.03450455182072824
+    ]
+  },
+  "quality_SEARCH3_vs_STOP": {
+    "mean": -0.08641211219336219,
+    "bootstrap95": [
+      -0.15001062522546896,
+      0.003468429038281971
+    ]
+  },
+  "tokens": {
+    "STOP": {
+      "mean": 3268.796875,
+      "bootstrap95": [
+        2678.9838235294114,
+        3511.818696379547
+      ]
+    },
+    "SEARCH1": {
+      "mean": 5313.03125,
+      "bootstrap95": [
+        4617.458088235295,
+        5576.963372133187
+      ]
+    },
+    "SEARCH3": {
+      "mean": 20734.0546875,
+      "bootstrap95": [
+        18562.005147058822,
+        22178.895197610294
+      ]
+    }
+  },
+  "token_utility": {
+    "0.0": {
+      "vs_SEARCH1": {
+        "mean": -0.03857258193195693,
+        "bootstrap95": [
+          -0.0712548735986236,
+          0.03450455182072824
+        ]
+      },
+      "vs_STOP": {
+        "mean": -0.08641211219336219,
+        "bootstrap95": [
+          -0.15001062522546896,
+          0.003468429038281971
+        ]
+      }
+    },
+    "0.001": {
+      "vs_SEARCH1": {
+        "mean": -0.05399360536945693,
+        "bootstrap95": [
+          -0.08679506197964743,
+          0.019350580397992503
+        ]
+      },
+      "vs_STOP": {
+        "mean": -0.1038773700058622,
+        "bootstrap95": [
+          -0.16792367025560223,
+          -0.013715924002100852
+        ]
+      }
+    },
+    "0.005": {
+      "vs_SEARCH1": {
+        "mean": -0.11567769911945694,
+        "bootstrap95": [
+          -0.1496921578855619,
+          -0.040988818452381004
+        ]
+      },
+      "vs_STOP": {
+        "mean": -0.1737384012558622,
+        "bootstrap95": [
+          -0.2395915930497199,
+          -0.08192205526377218
+        ]
+      }
+    },
+    "0.01": {
+      "vs_SEARCH1": {
+        "mean": -0.19278281630695693,
+        "bootstrap95": [
+          -0.2300577872059539,
+          -0.11524533549253034
+        ]
+      },
+      "vs_STOP": {
+        "mean": -0.2610646903183622,
+        "bootstrap95": [
+          -0.33055063235294113,
+          -0.16646052264239034
+        ]
+      }
+    },
+    "0.02": {
+      "vs_SEARCH1": {
+        "mean": -0.34699305068195696,
+        "bootstrap95": [
+          -0.3909968259825601,
+          -0.2629512090336134
+        ]
+      },
+      "vs_STOP": {
+        "mean": -0.4357172684433622,
+        "bootstrap95": [
+          -0.5137960765639591,
+          -0.33307730287114856
+        ]
+      }
+    }
+  },
+  "scope": "The complete original developer set is used; no task chosen by a favorable outcome. Existing STOP/SEARCH1 draws remain unchanged. Same completion ceiling does not imply equal prompt/search cost."
+}

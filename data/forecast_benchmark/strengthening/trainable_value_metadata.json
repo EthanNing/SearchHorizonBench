@@ -1,0 +1,198 @@
+{
+  "created_utc": "2026-10-18T10:36:09.657704+00:00",
+  "protocol": {
+    "created_utc": "2026-10-18T10:22:06.753274+00:00",
+    "classification": "Retrospective standard-baseline addition on completed native outcomes. Training and selection use the original development split.",
+    "purpose": "Compare a trainable text representation with the existing frozen-encoder value heads and numerical forecast corrections.",
+    "scope": "Initial checkpoint, DeepSeek Flash actor, 120 development and 400 test questions. At this checkpoint the varying public state is the question; source assistant/tool histories are empty. The actor, tools and budgets are fixed.",
+    "encoder": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+      "input": "Question text only. IDs, split, task stratum, references and outcomes stay outside the encoder input.",
+      "pooling": "Attention-masked mean followed by L2 normalization.",
+      "max_tokens": 256,
+      "trainable": "All encoder and output-head parameters."
+    },
+    "targets": {
+      "probabilities": "Two sigmoid outputs, squared error against the two four-draw development success rates.",
+      "gain": "One tanh output, squared error against SEARCH minus THINK development success rates."
+    },
+    "training": {
+      "learning_rates": [
+        1e-05,
+        3e-05
+      ],
+      "selection_epochs": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "learning_rates_apply_to": "Encoder parameters.",
+      "head_learning_rate": 0.001,
+      "batch_size": 8,
+      "optimizer": "AdamW",
+      "weight_decay": 0.01,
+      "gradient_clip_norm": 1.0,
+      "schedule": "Constant learning rate.",
+      "seed": 2026101814,
+      "CPU_threads": 2,
+      "head_initialization": "Zero weights and inverse-link bias at the training-fold mean.",
+      "folds": "Four stratum-balanced development folds; supporting pages are already disjoint among development questions."
+    },
+    "selection": "For each target choose learning rate and epoch by pooled held-out development squared error. Report that neural model even when the constant is competitive. A separate guarded row chooses the neural model only when its CV loss is below the fold-trained constant. Ties select the constant.",
+    "methods": [
+      "finetuned_probabilities",
+      "finetuned_gain",
+      "guarded_finetuned_probabilities",
+      "guarded_finetuned_gain"
+    ],
+    "analysis": "Freeze all test predictions before scoring. Compare with raw, constant and affine forecasts under four endpoints, source-supported sensitivity and component bootstrap. Report all fixed methods. Saved-branch routing uses development mean extra actor tokens and reports CPU inference separately from API-token utility.",
+    "resources": "Cached encoder, CPU training and inference. Zero new model API calls, search calls or actor outcomes. Do not alter the active Qwen actor campaign.",
+    "engineering_revision": "The earlier development-only pilot retained an encoder-scale head learning rate and nearly constant outputs. V2 uses a separate 0.001 head learning rate; the earlier protocol, code and CV predictions are preserved. No earlier test predictions or scores were produced.",
+    "boundary": "This is a standard trainable-value baseline, not a reproduction of an entire published stopping system. Existing test outcomes were known before this extension; any favorable new selection requires independent confirmation."
+  },
+  "fit": {
+    "created_utc": "2026-10-18T10:33:23.918457+00:00",
+    "test_predictions": 1600,
+    "max_question_tokens": 62,
+    "CPU_threads": 2,
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "4.46.3",
+    "test_labels_used_for_selection": false,
+    "new_API_calls": 0,
+    "classification": "Retrospective standard-baseline addition on completed native outcomes. Training and selection use the original development split.",
+    "elapsed_training_and_inference_seconds": 654.0671116779849,
+    "time_measurement": "Wall time on CPU, including selection, fitting and final inference. CPU service time is not measured."
+  },
+  "predictions": {
+    "finetuned_probabilities": "baseline_predictions/trainable_checkpoint0__finetuned_probabilities.jsonl",
+    "finetuned_gain": "baseline_predictions/trainable_checkpoint0__finetuned_gain.jsonl",
+    "guarded_finetuned_probabilities": "baseline_predictions/trainable_checkpoint0__guarded_finetuned_probabilities.jsonl",
+    "guarded_finetuned_gain": "baseline_predictions/trainable_checkpoint0__guarded_finetuned_gain.jsonl"
+  },
+  "checks": [
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_flash_v1",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_pro_v1",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "semantic_paired_judges",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_probabilities",
+      "endpoint": "raw_em",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_flash_v1",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_pro_v1",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "semantic_paired_judges",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "finetuned_gain",
+      "endpoint": "raw_em",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_flash_v1",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_pro_v1",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "semantic_paired_judges",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_probabilities",
+      "endpoint": "raw_em",
+      "metrics": 5,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_flash_v1",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_pro_v1",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "semantic_paired_judges",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    },
+    {
+      "method": "guarded_finetuned_gain",
+      "endpoint": "raw_em",
+      "metrics": 3,
+      "point_estimates_match": true,
+      "intervals_match": true
+    }
+  ],
+  "new_actor_executions": 0,
+  "baseline": "fresh_test_checkpoint0__Flash_probability_baseline.json",
+  "draws": {
+    "semantic_flash_v1": "fresh_test_checkpoint0_semantic_flash_v1_draws.jsonl",
+    "semantic_pro_v1": "fresh_test_checkpoint0_semantic_pro_v1_draws.jsonl",
+    "semantic_paired_judges": "fresh_test_checkpoint0_semantic_paired_judges_draws.jsonl",
+    "raw_em": "fresh_test_checkpoint0_raw_em_draws.jsonl"
+  },
+  "inputs": "fresh_test_checkpoint0_semantic_flash_v1_inputs.jsonl",
+  "scope": "Retrospective trainable-value comparison on the original four-hundred-question Flash initial-checkpoint frame. Preserve shared source outcomes and support-component identities."
+}

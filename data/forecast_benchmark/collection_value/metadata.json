@@ -1,0 +1,195 @@
+{
+  "created_utc": "2026-10-24T07:34:07.604234+00:00",
+  "study": "Fixed pending-query collection value",
+  "questions": 128,
+  "development": 32,
+  "test": 96,
+  "actor_outcomes": 1536,
+  "raw_forecasts": 256,
+  "model": "deepseek-flash",
+  "source_dataset": "google/deepsearchqa",
+  "exploratory_horizon_outcomes": 128,
+  "registration": {
+    "created_utc": "2026-10-24T05:35:54.477752+00:00",
+    "status": "Implementation prepared; awaiting explicit user start. No paid model/search call has been sent.",
+    "mainline": "Execution experience for predicting the value of a specific next search.",
+    "classification": "New prospective bounded-reward supplement; source-only curation is performed before predictions/outcomes.",
+    "source": {
+      "id": "google/deepsearchqa",
+      "sha": "b2623f8653065c2672de6d941fc5434cd652376c",
+      "private": false,
+      "gated": false,
+      "files": [
+        ".gitattributes",
+        "DSQA-full.csv",
+        "README.md"
+      ]
+    },
+    "candidate_count": 300,
+    "selection": "Fixed shuffled rank; official set-answer, single-line references. Require two Flash annotation checks and a natural pending query after exactly one completed search. Take first128 valid states. Keep all rejections and early finishes.",
+    "tasks": 128,
+    "development_tasks": 32,
+    "test_tasks": 96,
+    "actions": [
+      "STOP",
+      "SAME",
+      "SWITCH"
+    ],
+    "draws_per_action": 4,
+    "expected_suffixes": 1536,
+    "source_actor": "deepseek-flash",
+    "actor": "deepseek-flash",
+    "forecaster": "deepseek-flash",
+    "reviewer": "deepseek-flash",
+    "source_backend": "deepseek",
+    "alternative_backend": "serper",
+    "source_calls_per_candidate_max": 2,
+    "source_population": "Flash-origin pending-query states; natural early answers excluded and reported.",
+    "branch_contract": "Preserve the complete pending tool call. STOP returns an explicit cancellation tool response; SAME/SWITCH execute that fixed query once then finish. All branches receive8192 completion tokens. The shared prefix/query planning cost is recorded separately and retained for end-to-end accounting.",
+    "search_contract": "Five snippets, at most1500 characters each; matching output schema, no implicit page fetch. Same exact query and endpoint parameters share a saved response across stochastic actor draws. Report filtered benchmark-answer URLs.",
+    "primary_endpoint": "F1 against question-granularity, pre-execution frozen canonical items and aliases. This is benchmark set agreement, not an assertion of world-complete recall. Two Flash reviews are secondary and do not form independent-model validation.",
+    "primary_comparison": "Mean SAME-minus-STOP and SWITCH-minus-STOP gain risk: direct query-aware gain regression versus the per-action development mean; paired component95% interval.",
+    "secondary": [
+      "query-aware versus query-hidden raw and calibrated forecasts",
+      "coverage/rate baselines",
+      "best fixed development-selected action",
+      "matched action-rate random baseline",
+      "per-action precision,recall,FP,TP",
+      "cost at0,.001,.005,.01,.02 per1000 reported model tokens; search attempts and rates reported separately"
+    ],
+    "model_selection": "Four development component folds; penalties0.01,0.1,1,10,100; compare constant guard. No target test outcome or held-out search result used in selection.",
+    "timing": "Freeze source annotations and task split; extract only already observed document entities; freeze all raw forecasts before development actors. Freeze fitted test predictions before test actors.",
+    "split": "Tasks and connected components of observed prefix URLs or shared reference entities stay together. Development requires at least four components; any eligibility/split deficit stops before actor outcomes.",
+    "budget": {
+      "models": 7000,
+      "searches": 1000,
+      "combined": 8000,
+      "includes": "Every physical HTTP attempt, including retries, screening, extraction, forecasts and answer reviews.",
+      "nominal": {
+        "reference_curation": 600,
+        "prefix_generation": 600,
+        "document_entity_extraction": 128,
+        "forecasts": 256,
+        "suffixes": 1536,
+        "secondary_answer_reviews": 3072
+      },
+      "priority": "Complete the fixed primary frame and deterministic scoring before optional secondary answer reviews."
+    },
+    "measurement": "Repeated draws and answer items do not increase independent task N. Preserve terminal failures at zero, transport missingness and shared response/answer identities.",
+    "uncertainty": "10000 observed-component bootstrap samples; simple zero-projection is separate from secondary ambiguous-label bounds.",
+    "stop": "Stop for incomplete eligibility/frame, exhausted budget, repeated transport failure, or inability to split components. Retain results without selecting a favorable subset.",
+    "new_paid_model_requests": 0,
+    "new_search_requests": 0,
+    "source_download_bytes": 355106,
+    "implemented_baselines": [
+      "per-action mean",
+      "calibrated Good–Turing/Chao/Good–Toulmin and last-discovery features",
+      "combined coverage ridge",
+      "query-aware and query-hidden raw forecasts",
+      "query-aware and query-hidden outcome regressions",
+      "direct gain versions of each feature family",
+      "learned outcome level plus mean gain"
+    ],
+    "reference_note": "Canonical strings and aliases are copied from exact spans of the official reference, then separately checked by Flash before cohort selection. Primary scoring is fixed set agreement; this curation is not independent verification of every world fact.",
+    "inference_cost_note": "Models selected as constants by development CV can omit per-query feature extraction and forecasts. End-to-end model-token totals also include the common prefix.",
+    "user_constraint": "Develop and test only, stop before real execution. All planned model calls use Flash; total model+search attempts <=8000 including retries.",
+    "prediction_encoding": "Direct gain methods encode STOP=0 and the two relative gains; these are not absolute expected-F1 predictions. Outcome MSE is omitted for them; routing uses differences.",
+    "secondary_review_policy": "Deduplicate identical task/answer sets. One Flash review each, plus a second review for every fifth case and ambiguous first reviews. The3072-call entry is a conservative upper bound, not a spending target.",
+    "finalization_revision_before_test": {
+      "created_utc": "2026-10-24T06:41:32.749819+00:00",
+      "stage": "Development-only engineering output pilot; no test outputs or fitted test predictions existed.",
+      "reason": "Auto tool choice emitted unprovided search calls during required finalization.",
+      "new_contract": "Keep enabled reasoning and tools context, set tool_choice none and response_format json_object for the one final answer call. Preserve legal canceled/completed tool response.",
+      "forecast_action": "Regenerate both raw forecaster views with the explicit revised final-delivery definition before every fresh formal actor output.",
+      "preservation": "engineering_before_json_delivery plus unchanged old llm/forecast files. All requests remain in the same capped ledger."
+    }
+  },
+  "checks": [
+    {
+      "method": "chao",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "chao_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "constant",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "coverage",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "coverage_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "good_toulmin",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "good_toulmin_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "good_turing",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "good_turing_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "last_discovery",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "last_discovery_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "level_mean_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "query_aware",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "query_aware_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "query_hidden",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "query_hidden_gain",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "raw_query_aware",
+      "means_and_intervals_match": true
+    },
+    {
+      "method": "raw_query_hidden",
+      "means_and_intervals_match": true
+    }
+  ],
+  "primary": {
+    "comparison": "query-aware direct gain regression minus per-action development mean; mean of two gain risks",
+    "difference": {
+      "mean": -4.647387437268594e-19,
+      "bootstrap95": [
+        -3.54220280417858e-18,
+        2.9176089761292366e-18
+      ]
+    },
+    "upper_95_below_zero": false
+  },
+  "strict_measurement": "F1 against curated original-reference spans and frozen aliases. This is an adapted objective identity layer, not the official Gemini autorater or world-complete factual verification.",
+  "input_boundary": "Predict from input only. Component IDs, rewards, development means and costs belong to the evaluator.",
+  "engineering_history": "The pre-JSON-finalization development pilot is preserved separately and excluded from this formal frame. All requests remain in the campaign budget ledger."
+}

@@ -1,0 +1,5018 @@
+{
+  "name": "SearchHorizonBench",
+  "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
+  "artifact": "Exported offline scoring records and NumPy scorers",
+  "file_inventory": [
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/Flash__forward__prior.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/Flash__reverse__prior.json",
+      "bytes": 119,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/Pro__forward__prior.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/Pro__reverse__prior.json",
+      "bytes": 119,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/metadata.json",
+      "bytes": 22094,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/prediction_replay.json",
+      "bytes": 321626,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__AY_map_on_BY_scores.jsonl",
+      "bytes": 72094,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__BX_level_own_mean_gain.jsonl",
+      "bytes": 69350,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__BX_level_zero_gain.jsonl",
+      "bytes": 66790,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__BX_map_on_BY_scores.jsonl",
+      "bytes": 72027,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__BX_own_source_mean.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__additive_SEARCH.jsonl",
+      "bytes": 72208,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__armwise_additive_SEARCH.jsonl",
+      "bytes": 72151,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__portfolio_additive.jsonl",
+      "bytes": 72129,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__portfolio_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__portfolio_level_matched_mean_gain.jsonl",
+      "bytes": 69442,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__portfolio_level_zero_gain.jsonl",
+      "bytes": 66882,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__raw.jsonl",
+      "bytes": 61589,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__source_actor_target_backend.jsonl",
+      "bytes": 72071,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__source_affine.jsonl",
+      "bytes": 72027,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__forward__target_actor_other_backend.jsonl",
+      "bytes": 72016,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__AY_map_on_BY_scores.jsonl",
+      "bytes": 73249,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__BX_level_own_mean_gain.jsonl",
+      "bytes": 70514,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__BX_level_zero_gain.jsonl",
+      "bytes": 68127,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__BX_map_on_BY_scores.jsonl",
+      "bytes": 73327,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__BX_own_source_mean.jsonl",
+      "bytes": 65032,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__additive_SEARCH.jsonl",
+      "bytes": 73370,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__armwise_additive_SEARCH.jsonl",
+      "bytes": 73422,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__portfolio_additive.jsonl",
+      "bytes": 73339,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__portfolio_constant.jsonl",
+      "bytes": 64072,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__portfolio_level_matched_mean_gain.jsonl",
+      "bytes": 69634,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__portfolio_level_zero_gain.jsonl",
+      "bytes": 68142,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__raw.jsonl",
+      "bytes": 63164,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__source_actor_target_backend.jsonl",
+      "bytes": 73296,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__source_affine.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Flash__reverse__target_actor_other_backend.jsonl",
+      "bytes": 73351,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__AY_map_on_BY_scores.jsonl",
+      "bytes": 71952,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__BX_level_own_mean_gain.jsonl",
+      "bytes": 69414,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__BX_level_zero_gain.jsonl",
+      "bytes": 66836,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__BX_map_on_BY_scores.jsonl",
+      "bytes": 72149,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__BX_own_source_mean.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__additive_SEARCH.jsonl",
+      "bytes": 72217,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__armwise_additive_SEARCH.jsonl",
+      "bytes": 72276,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__portfolio_additive.jsonl",
+      "bytes": 72240,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__portfolio_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__portfolio_level_matched_mean_gain.jsonl",
+      "bytes": 69466,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__portfolio_level_zero_gain.jsonl",
+      "bytes": 66902,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__raw.jsonl",
+      "bytes": 61557,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__source_actor_target_backend.jsonl",
+      "bytes": 72005,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__source_affine.jsonl",
+      "bytes": 71970,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__forward__target_actor_other_backend.jsonl",
+      "bytes": 72142,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__AY_map_on_BY_scores.jsonl",
+      "bytes": 73403,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__BX_level_own_mean_gain.jsonl",
+      "bytes": 70171,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__BX_level_zero_gain.jsonl",
+      "bytes": 68158,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__BX_map_on_BY_scores.jsonl",
+      "bytes": 73302,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__BX_own_source_mean.jsonl",
+      "bytes": 65032,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__additive_SEARCH.jsonl",
+      "bytes": 73317,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__armwise_additive_SEARCH.jsonl",
+      "bytes": 73389,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__portfolio_additive.jsonl",
+      "bytes": 73318,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__portfolio_constant.jsonl",
+      "bytes": 64072,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__portfolio_level_matched_mean_gain.jsonl",
+      "bytes": 69624,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__portfolio_level_zero_gain.jsonl",
+      "bytes": 68182,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__raw.jsonl",
+      "bytes": 62399,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__source_actor_target_backend.jsonl",
+      "bytes": 73422,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__source_affine.jsonl",
+      "bytes": 73456,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/actor_matched_controls/predictions/Pro__reverse__target_actor_other_backend.jsonl",
+      "bytes": 73285,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/development_draws.jsonl",
+      "bytes": 13753,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/development_horizon3_draws.jsonl",
+      "bytes": 7169,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/development_inputs.jsonl",
+      "bytes": 566204,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/horizon_diagnostic.json",
+      "bytes": 3481,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/metadata.json",
+      "bytes": 9713,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/chao.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/chao_gain.jsonl",
+      "bytes": 10848,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/constant.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/coverage.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/coverage_gain.jsonl",
+      "bytes": 10848,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/good_toulmin.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/good_toulmin_gain.jsonl",
+      "bytes": 10848,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/good_turing.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/good_turing_gain.jsonl",
+      "bytes": 10847,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/last_discovery.jsonl",
+      "bytes": 12201,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/last_discovery_gain.jsonl",
+      "bytes": 10848,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/level_mean_gain.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/query_aware.jsonl",
+      "bytes": 12288,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/query_aware_gain.jsonl",
+      "bytes": 10848,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/query_hidden.jsonl",
+      "bytes": 12206,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/query_hidden_gain.jsonl",
+      "bytes": 10830,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/raw_query_aware.jsonl",
+      "bytes": 7924,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/predictions/raw_query_hidden.jsonl",
+      "bytes": 7916,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/test_draws.jsonl",
+      "bytes": 39781,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/collection_value/test_inputs.jsonl",
+      "bytes": 1803344,
+      "records": 96
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/calibration_banks.json",
+      "bytes": 5695,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_DeepSeek_EM_draws.jsonl",
+      "bytes": 449265,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_DeepSeek_Flash_draws.jsonl",
+      "bytes": 449649,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_DeepSeek_Pro_draws.jsonl",
+      "bytes": 449393,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_DeepSeek_paired_lower_draws.jsonl",
+      "bytes": 450545,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_DeepSeek_paired_uncertain_draws.jsonl",
+      "bytes": 451104,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_Serper_EM_draws.jsonl",
+      "bytes": 445882,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_Serper_Flash_draws.jsonl",
+      "bytes": 446266,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_Serper_Pro_draws.jsonl",
+      "bytes": 446010,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_Serper_paired_lower_draws.jsonl",
+      "bytes": 447162,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Flash_Serper_paired_uncertain_draws.jsonl",
+      "bytes": 447711,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_DeepSeek_EM_draws.jsonl",
+      "bytes": 443782,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_DeepSeek_Flash_draws.jsonl",
+      "bytes": 444166,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_DeepSeek_Pro_draws.jsonl",
+      "bytes": 443910,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_DeepSeek_paired_lower_draws.jsonl",
+      "bytes": 445062,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_DeepSeek_paired_uncertain_draws.jsonl",
+      "bytes": 445629,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_Serper_EM_draws.jsonl",
+      "bytes": 440995,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_Serper_Flash_draws.jsonl",
+      "bytes": 441379,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_Serper_Pro_draws.jsonl",
+      "bytes": 441123,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_Serper_paired_lower_draws.jsonl",
+      "bytes": 442275,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_Pro_Serper_paired_uncertain_draws.jsonl",
+      "bytes": 442831,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/development_inputs.jsonl",
+      "bytes": 548426,
+      "records": 256
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/evaluator/references.json",
+      "bytes": 830606,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/metadata.json",
+      "bytes": 179393,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/portfolio_prior.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/prediction_metadata.json",
+      "bytes": 3948544,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__paired_affine.jsonl",
+      "bytes": 73334,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__paired_equal_outputs.jsonl",
+      "bytes": 66441,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__paired_source_residual.jsonl",
+      "bytes": 72963,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__paired_source_shrink.jsonl",
+      "bytes": 66299,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__raw.jsonl",
+      "bytes": 62405,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__source_affine.jsonl",
+      "bytes": 72662,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__stop_mean_source_gain.jsonl",
+      "bytes": 59592,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__stop_offset.jsonl",
+      "bytes": 64188,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__stop_opportunity.jsonl",
+      "bytes": 68391,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__stop_shrunk_offset.jsonl",
+      "bytes": 64188,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__actor__target_constant.jsonl",
+      "bytes": 59592,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__paired_affine.jsonl",
+      "bytes": 72663,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__paired_equal_outputs.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__paired_source_residual.jsonl",
+      "bytes": 72692,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__paired_source_shrink.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__raw.jsonl",
+      "bytes": 62243,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__source_affine.jsonl",
+      "bytes": 72675,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__stop_mean_source_gain.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__stop_offset.jsonl",
+      "bytes": 72675,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__stop_opportunity.jsonl",
+      "bytes": 72674,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__stop_shrunk_offset.jsonl",
+      "bytes": 72675,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__backend__target_constant.jsonl",
+      "bytes": 62472,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__paired_affine.jsonl",
+      "bytes": 72405,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__paired_equal_outputs.jsonl",
+      "bytes": 64624,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__paired_source_residual.jsonl",
+      "bytes": 72160,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__paired_source_shrink.jsonl",
+      "bytes": 68236,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__portfolio_additive.jsonl",
+      "bytes": 72129,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__portfolio_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__raw.jsonl",
+      "bytes": 61589,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__source_affine.jsonl",
+      "bytes": 72027,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__source_constant.jsonl",
+      "bytes": 63752,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__stop_mean_source_gain.jsonl",
+      "bytes": 58952,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__stop_offset.jsonl",
+      "bytes": 63574,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__stop_opportunity.jsonl",
+      "bytes": 67762,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__stop_shrunk_offset.jsonl",
+      "bytes": 63574,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__forward__joint__target_constant.jsonl",
+      "bytes": 60232,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__paired_affine.jsonl",
+      "bytes": 72547,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__paired_equal_outputs.jsonl",
+      "bytes": 72554,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__paired_source_residual.jsonl",
+      "bytes": 72793,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__paired_source_shrink.jsonl",
+      "bytes": 72600,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__raw.jsonl",
+      "bytes": 62243,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__source_affine.jsonl",
+      "bytes": 72793,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__stop_mean_source_gain.jsonl",
+      "bytes": 63112,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__stop_offset.jsonl",
+      "bytes": 72810,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__stop_opportunity.jsonl",
+      "bytes": 72846,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__stop_shrunk_offset.jsonl",
+      "bytes": 72793,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__actor__target_constant.jsonl",
+      "bytes": 61192,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__paired_affine.jsonl",
+      "bytes": 72491,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__paired_equal_outputs.jsonl",
+      "bytes": 71063,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__paired_source_residual.jsonl",
+      "bytes": 72472,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__paired_source_shrink.jsonl",
+      "bytes": 71063,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__raw.jsonl",
+      "bytes": 62405,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__source_affine.jsonl",
+      "bytes": 72754,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__stop_mean_source_gain.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__stop_offset.jsonl",
+      "bytes": 72754,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__stop_opportunity.jsonl",
+      "bytes": 72754,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__stop_shrunk_offset.jsonl",
+      "bytes": 72754,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__backend__target_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__paired_affine.jsonl",
+      "bytes": 73376,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__paired_equal_outputs.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__paired_source_residual.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__paired_source_shrink.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__portfolio_additive.jsonl",
+      "bytes": 73339,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__portfolio_constant.jsonl",
+      "bytes": 64072,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__raw.jsonl",
+      "bytes": 63164,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__source_affine.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__source_constant.jsonl",
+      "bytes": 65032,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__stop_mean_source_gain.jsonl",
+      "bytes": 63752,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__stop_offset.jsonl",
+      "bytes": 73475,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__stop_opportunity.jsonl",
+      "bytes": 73451,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__stop_shrunk_offset.jsonl",
+      "bytes": 73388,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Flash__reverse__joint__target_constant.jsonl",
+      "bytes": 62152,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__paired_affine.jsonl",
+      "bytes": 73058,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__paired_equal_outputs.jsonl",
+      "bytes": 66678,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__paired_source_residual.jsonl",
+      "bytes": 72175,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__paired_source_shrink.jsonl",
+      "bytes": 66415,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__raw.jsonl",
+      "bytes": 62249,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__source_affine.jsonl",
+      "bytes": 72641,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__stop_mean_source_gain.jsonl",
+      "bytes": 59592,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__stop_offset.jsonl",
+      "bytes": 64542,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__stop_opportunity.jsonl",
+      "bytes": 68733,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__stop_shrunk_offset.jsonl",
+      "bytes": 64542,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__actor__target_constant.jsonl",
+      "bytes": 59592,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__paired_affine.jsonl",
+      "bytes": 71177,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__paired_equal_outputs.jsonl",
+      "bytes": 70951,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__paired_source_residual.jsonl",
+      "bytes": 72524,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__paired_source_shrink.jsonl",
+      "bytes": 70951,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__raw.jsonl",
+      "bytes": 61779,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__source_affine.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__stop_mean_source_gain.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__stop_offset.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__stop_opportunity.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__stop_shrunk_offset.jsonl",
+      "bytes": 72659,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__backend__target_constant.jsonl",
+      "bytes": 62472,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__paired_affine.jsonl",
+      "bytes": 72182,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__paired_equal_outputs.jsonl",
+      "bytes": 64918,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__paired_source_residual.jsonl",
+      "bytes": 71812,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__paired_source_shrink.jsonl",
+      "bytes": 67773,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__portfolio_additive.jsonl",
+      "bytes": 72240,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__portfolio_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__raw.jsonl",
+      "bytes": 61557,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__source_affine.jsonl",
+      "bytes": 71970,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__source_constant.jsonl",
+      "bytes": 63752,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__stop_mean_source_gain.jsonl",
+      "bytes": 58952,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__stop_offset.jsonl",
+      "bytes": 64064,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__stop_opportunity.jsonl",
+      "bytes": 68246,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__stop_shrunk_offset.jsonl",
+      "bytes": 64064,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__forward__joint__target_constant.jsonl",
+      "bytes": 60232,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__paired_affine.jsonl",
+      "bytes": 70126,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__paired_equal_outputs.jsonl",
+      "bytes": 68206,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__paired_source_residual.jsonl",
+      "bytes": 72304,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__paired_source_shrink.jsonl",
+      "bytes": 68488,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__raw.jsonl",
+      "bytes": 61779,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__source_affine.jsonl",
+      "bytes": 72811,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__stop_mean_source_gain.jsonl",
+      "bytes": 63112,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__stop_offset.jsonl",
+      "bytes": 71962,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__stop_opportunity.jsonl",
+      "bytes": 71919,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__stop_shrunk_offset.jsonl",
+      "bytes": 72770,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__actor__target_constant.jsonl",
+      "bytes": 61192,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__paired_affine.jsonl",
+      "bytes": 72501,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__paired_equal_outputs.jsonl",
+      "bytes": 70100,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__paired_source_residual.jsonl",
+      "bytes": 71980,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__paired_source_shrink.jsonl",
+      "bytes": 70100,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__raw.jsonl",
+      "bytes": 62249,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__source_affine.jsonl",
+      "bytes": 72854,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__source_constant.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__stop_mean_source_gain.jsonl",
+      "bytes": 64392,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__stop_offset.jsonl",
+      "bytes": 72854,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__stop_opportunity.jsonl",
+      "bytes": 72854,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__stop_shrunk_offset.jsonl",
+      "bytes": 72854,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__backend__target_constant.jsonl",
+      "bytes": 63432,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__paired_affine.jsonl",
+      "bytes": 73371,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__paired_equal_outputs.jsonl",
+      "bytes": 73453,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__paired_source_residual.jsonl",
+      "bytes": 73417,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__paired_source_shrink.jsonl",
+      "bytes": 72174,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__portfolio_additive.jsonl",
+      "bytes": 73318,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__portfolio_constant.jsonl",
+      "bytes": 64072,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__raw.jsonl",
+      "bytes": 62399,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__source_affine.jsonl",
+      "bytes": 73456,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__source_constant.jsonl",
+      "bytes": 65032,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__stop_mean_source_gain.jsonl",
+      "bytes": 63752,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__stop_offset.jsonl",
+      "bytes": 72460,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__stop_opportunity.jsonl",
+      "bytes": 72401,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__stop_shrunk_offset.jsonl",
+      "bytes": 73376,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions/Pro__reverse__joint__target_constant.jsonl",
+      "bytes": 62152,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/predictions.npz",
+      "bytes": 1989682,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_DeepSeek_EM_draws.jsonl",
+      "bytes": 1097863,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_DeepSeek_Flash_draws.jsonl",
+      "bytes": 1098823,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_DeepSeek_Pro_draws.jsonl",
+      "bytes": 1098183,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_DeepSeek_paired_lower_draws.jsonl",
+      "bytes": 1101063,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_DeepSeek_paired_uncertain_draws.jsonl",
+      "bytes": 1102473,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_Serper_EM_draws.jsonl",
+      "bytes": 1090010,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_Serper_Flash_draws.jsonl",
+      "bytes": 1090970,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_Serper_Pro_draws.jsonl",
+      "bytes": 1090330,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_Serper_paired_lower_draws.jsonl",
+      "bytes": 1093210,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Flash_Serper_paired_uncertain_draws.jsonl",
+      "bytes": 1094608,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_DeepSeek_EM_draws.jsonl",
+      "bytes": 1089104,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_DeepSeek_Flash_draws.jsonl",
+      "bytes": 1090064,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_DeepSeek_Pro_draws.jsonl",
+      "bytes": 1089424,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_DeepSeek_paired_lower_draws.jsonl",
+      "bytes": 1092304,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_DeepSeek_paired_uncertain_draws.jsonl",
+      "bytes": 1093708,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_Serper_EM_draws.jsonl",
+      "bytes": 1082252,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_Serper_Flash_draws.jsonl",
+      "bytes": 1083212,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_Serper_Pro_draws.jsonl",
+      "bytes": 1082572,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_Serper_paired_lower_draws.jsonl",
+      "bytes": 1085452,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_Pro_Serper_paired_uncertain_draws.jsonl",
+      "bytes": 1086836,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_inputs.jsonl",
+      "bytes": 1325594,
+      "records": 640
+    },
+    {
+      "file": "data/forecast_benchmark/component_maintenance/test_order.json",
+      "bytes": 12555,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/Flash_ClueWeb_local_prior.json",
+      "bytes": 113,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/Flash_FineWeb_local_prior.json",
+      "bytes": 113,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/Pro_ClueWeb_local_prior.json",
+      "bytes": 113,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/Pro_FineWeb_local_prior.json",
+      "bytes": 113,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_ClueWeb_EM_draws.jsonl",
+      "bytes": 104206,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_ClueWeb_Flash_draws.jsonl",
+      "bytes": 104206,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_ClueWeb_Pro_draws.jsonl",
+      "bytes": 104206,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_ClueWeb_paired_lower_draws.jsonl",
+      "bytes": 104206,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_FineWeb_EM_draws.jsonl",
+      "bytes": 104325,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_FineWeb_Flash_draws.jsonl",
+      "bytes": 104325,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_FineWeb_Pro_draws.jsonl",
+      "bytes": 104325,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Flash_FineWeb_paired_lower_draws.jsonl",
+      "bytes": 104325,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_ClueWeb_EM_draws.jsonl",
+      "bytes": 103977,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_ClueWeb_Flash_draws.jsonl",
+      "bytes": 103977,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_ClueWeb_Pro_draws.jsonl",
+      "bytes": 103977,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_ClueWeb_paired_lower_draws.jsonl",
+      "bytes": 103977,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_FineWeb_EM_draws.jsonl",
+      "bytes": 104002,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_FineWeb_Flash_draws.jsonl",
+      "bytes": 104002,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_FineWeb_Pro_draws.jsonl",
+      "bytes": 104002,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_Pro_FineWeb_paired_lower_draws.jsonl",
+      "bytes": 104002,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/development_inputs.jsonl",
+      "bytes": 141020,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/metadata.json",
+      "bytes": 5982,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__ClueWeb__local_means.jsonl",
+      "bytes": 12200,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__FineWeb__local_means.jsonl",
+      "bytes": 12200,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__known_STOP_offset.jsonl",
+      "bytes": 14087,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__known_STOP_opportunity.jsonl",
+      "bytes": 14089,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__local_affine.jsonl",
+      "bytes": 14187,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__local_search_shrink.jsonl",
+      "bytes": 14179,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__raw.jsonl",
+      "bytes": 12077,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__source_affine.jsonl",
+      "bytes": 14240,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__ClueWeb__source_constant.jsonl",
+      "bytes": 12584,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__known_STOP_offset.jsonl",
+      "bytes": 14071,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__known_STOP_opportunity.jsonl",
+      "bytes": 14086,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__local_affine.jsonl",
+      "bytes": 14240,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__local_search_shrink.jsonl",
+      "bytes": 14169,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__raw.jsonl",
+      "bytes": 12131,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__source_affine.jsonl",
+      "bytes": 14231,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Flash__FineWeb__source_constant.jsonl",
+      "bytes": 12584,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__known_STOP_offset.jsonl",
+      "bytes": 14158,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__known_STOP_opportunity.jsonl",
+      "bytes": 14142,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__local_affine.jsonl",
+      "bytes": 14095,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__local_search_shrink.jsonl",
+      "bytes": 14142,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__raw.jsonl",
+      "bytes": 12013,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__source_affine.jsonl",
+      "bytes": 14142,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__ClueWeb__source_constant.jsonl",
+      "bytes": 12456,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__known_STOP_offset.jsonl",
+      "bytes": 14141,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__known_STOP_opportunity.jsonl",
+      "bytes": 14138,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__local_affine.jsonl",
+      "bytes": 14128,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__local_search_shrink.jsonl",
+      "bytes": 14147,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__raw.jsonl",
+      "bytes": 11988,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__source_affine.jsonl",
+      "bytes": 14147,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Flash__Pro__FineWeb__source_constant.jsonl",
+      "bytes": 12456,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__ClueWeb__local_means.jsonl",
+      "bytes": 12072,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__FineWeb__local_means.jsonl",
+      "bytes": 12072,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__known_STOP_offset.jsonl",
+      "bytes": 13067,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__known_STOP_opportunity.jsonl",
+      "bytes": 13579,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__local_affine.jsonl",
+      "bytes": 14266,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__local_search_shrink.jsonl",
+      "bytes": 13921,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__raw.jsonl",
+      "bytes": 12144,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__source_affine.jsonl",
+      "bytes": 14233,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__ClueWeb__source_constant.jsonl",
+      "bytes": 12584,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__known_STOP_offset.jsonl",
+      "bytes": 13120,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__known_STOP_opportunity.jsonl",
+      "bytes": 13584,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__local_affine.jsonl",
+      "bytes": 14281,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__local_search_shrink.jsonl",
+      "bytes": 13912,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__raw.jsonl",
+      "bytes": 12185,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__source_affine.jsonl",
+      "bytes": 14251,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Flash__FineWeb__source_constant.jsonl",
+      "bytes": 12584,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__known_STOP_offset.jsonl",
+      "bytes": 13352,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__known_STOP_opportunity.jsonl",
+      "bytes": 13916,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__local_affine.jsonl",
+      "bytes": 14108,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__local_search_shrink.jsonl",
+      "bytes": 13218,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__raw.jsonl",
+      "bytes": 11960,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__source_affine.jsonl",
+      "bytes": 14171,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__ClueWeb__source_constant.jsonl",
+      "bytes": 12456,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__known_STOP_offset.jsonl",
+      "bytes": 13360,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__known_STOP_opportunity.jsonl",
+      "bytes": 13917,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__local_affine.jsonl",
+      "bytes": 14144,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__local_search_shrink.jsonl",
+      "bytes": 13302,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__raw.jsonl",
+      "bytes": 11890,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__source_affine.jsonl",
+      "bytes": 14168,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/predictions/Pro__Pro__FineWeb__source_constant.jsonl",
+      "bytes": 12456,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_ClueWeb_EM_draws.jsonl",
+      "bytes": 206403,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_ClueWeb_Flash_draws.jsonl",
+      "bytes": 206403,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_ClueWeb_Pro_draws.jsonl",
+      "bytes": 206403,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_ClueWeb_paired_lower_draws.jsonl",
+      "bytes": 206403,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_FineWeb_EM_draws.jsonl",
+      "bytes": 206526,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_FineWeb_Flash_draws.jsonl",
+      "bytes": 206526,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_FineWeb_Pro_draws.jsonl",
+      "bytes": 206526,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Flash_FineWeb_paired_lower_draws.jsonl",
+      "bytes": 206526,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_ClueWeb_EM_draws.jsonl",
+      "bytes": 206130,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_ClueWeb_Flash_draws.jsonl",
+      "bytes": 206130,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_ClueWeb_Pro_draws.jsonl",
+      "bytes": 206130,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_ClueWeb_paired_lower_draws.jsonl",
+      "bytes": 206130,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_FineWeb_EM_draws.jsonl",
+      "bytes": 206222,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_FineWeb_Flash_draws.jsonl",
+      "bytes": 206222,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_FineWeb_Pro_draws.jsonl",
+      "bytes": 206222,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_Pro_FineWeb_paired_lower_draws.jsonl",
+      "bytes": 206222,
+      "records": 64
+    },
+    {
+      "file": "data/forecast_benchmark/component_static_sources/test_inputs.jsonl",
+      "bytes": 270324,
+      "records": 128
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/cost_rules.json",
+      "bytes": 232,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/metadata.json",
+      "bytes": 101053,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/finetuned_gain.jsonl",
+      "bytes": 264043,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/finetuned_probabilities.jsonl",
+      "bytes": 387974,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/guarded_finetuned_gain.jsonl",
+      "bytes": 263585,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/guarded_finetuned_probabilities.jsonl",
+      "bytes": 387974,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/raw.jsonl",
+      "bytes": 337390,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_constant.jsonl",
+      "bytes": 387617,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_effect_affine.jsonl",
+      "bytes": 268875,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_effect_offset.jsonl",
+      "bytes": 266081,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_effect_ridge.jsonl",
+      "bytes": 268817,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_probability_affine.jsonl",
+      "bytes": 389293,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/source120_probability_offset.jsonl",
+      "bytes": 366861,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_constant.jsonl",
+      "bytes": 351713,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_effect_affine.jsonl",
+      "bytes": 270573,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_effect_offset.jsonl",
+      "bytes": 267026,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_effect_ridge.jsonl",
+      "bytes": 270472,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_probability_affine.jsonl",
+      "bytes": 390877,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/predictions/target40_probability_offset.jsonl",
+      "bytes": 348996,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/raw_em_draws.jsonl",
+      "bytes": 5039520,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/raw_em_inputs.jsonl",
+      "bytes": 4336841,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_flash_v1_draws.jsonl",
+      "bytes": 5039555,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_flash_v1_inputs.jsonl",
+      "bytes": 4336841,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_paired_judges_draws.jsonl",
+      "bytes": 5039940,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_paired_judges_inputs.jsonl",
+      "bytes": 4336841,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_pro_v1_draws.jsonl",
+      "bytes": 5039633,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/semantic_pro_v1_inputs.jsonl",
+      "bytes": 4336841,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/source120_baseline.json",
+      "bytes": 142,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/cost_confirmation/target40_baseline.json",
+      "bytes": 120,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__constant.jsonl",
+      "bytes": 9462,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__effect_affine.jsonl",
+      "bytes": 5943,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__effect_offset.jsonl",
+      "bytes": 5949,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__effect_ridge.jsonl",
+      "bytes": 5942,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__probability_affine.jsonl",
+      "bytes": 10067,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__probability_offset.jsonl",
+      "bytes": 9640,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Flash_probability__raw.jsonl",
+      "bytes": 8196,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__constant.jsonl",
+      "bytes": 9462,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__effect_affine.jsonl",
+      "bytes": 5942,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__effect_offset.jsonl",
+      "bytes": 5951,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__effect_ridge.jsonl",
+      "bytes": 5938,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__probability_affine.jsonl",
+      "bytes": 10050,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__probability_offset.jsonl",
+      "bytes": 10105,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/live_test__Pro_probability__raw.jsonl",
+      "bytes": 8219,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__constant.jsonl",
+      "bytes": 61920,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__effect_affine.jsonl",
+      "bytes": 40387,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__effect_offset.jsonl",
+      "bytes": 40390,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__effect_ridge.jsonl",
+      "bytes": 40347,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__probability_affine.jsonl",
+      "bytes": 64694,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__probability_offset.jsonl",
+      "bytes": 59485,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Flash_probability__raw.jsonl",
+      "bytes": 54253,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__constant.jsonl",
+      "bytes": 61920,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__effect_affine.jsonl",
+      "bytes": 40390,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__effect_offset.jsonl",
+      "bytes": 40227,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__effect_ridge.jsonl",
+      "bytes": 40437,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__probability_affine.jsonl",
+      "bytes": 64662,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__probability_offset.jsonl",
+      "bytes": 62107,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/baseline_predictions/static160__Pro_probability__raw.jsonl",
+      "bytes": 53462,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/historical224_draws.jsonl",
+      "bytes": 466947,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/historical224_forecasts.jsonl",
+      "bytes": 45816,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/historical224_inputs.jsonl",
+      "bytes": 5035526,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_calibrators.json",
+      "bytes": 4632,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_development24_draws.jsonl",
+      "bytes": 45951,
+      "records": 24
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_development24_forecasts.jsonl",
+      "bytes": 3805,
+      "records": 24
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_development24_inputs.jsonl",
+      "bytes": 286180,
+      "records": 24
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_Pro_endpoint_draws.jsonl",
+      "bytes": 105014,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_Pro_endpoint_inputs.jsonl",
+      "bytes": 628430,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_baseline.json",
+      "bytes": 131,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_conservative_draws.jsonl",
+      "bytes": 105144,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_conservative_inputs.jsonl",
+      "bytes": 628430,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_draws.jsonl",
+      "bytes": 99385,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_inputs.jsonl",
+      "bytes": 628430,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_paired_judges_draws.jsonl",
+      "bytes": 105463,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/live_test_paired_judges_inputs.jsonl",
+      "bytes": 628430,
+      "records": 54
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/metadata.json",
+      "bytes": 10962,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_Pro_endpoint_draws.jsonl",
+      "bytes": 608516,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_Pro_endpoint_inputs.jsonl",
+      "bytes": 7184440,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_baseline.json",
+      "bytes": 134,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_calibrators.json",
+      "bytes": 12547,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_conservative_draws.jsonl",
+      "bytes": 608805,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_conservative_inputs.jsonl",
+      "bytes": 7184440,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_draws.jsonl",
+      "bytes": 575212,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_inputs.jsonl",
+      "bytes": 7184440,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_paired_judges_draws.jsonl",
+      "bytes": 611145,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/empirical_calibration/static160_paired_judges_inputs.jsonl",
+      "bytes": 7184440,
+      "records": 320
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/Flash_direct.jsonl",
+      "bytes": 24562,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/Flash_probability.jsonl",
+      "bytes": 37924,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/Pro_probability.jsonl",
+      "bytes": 37670,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/development_constant.jsonl",
+      "bytes": 25120,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/development_ridge.jsonl",
+      "bytes": 28029,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_predictions/zero.jsonl",
+      "bytes": 24448,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_direct__deepseek-flash.json",
+      "bytes": 1720,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_direct__deepseek-flash__conservative.json",
+      "bytes": 1742,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_direct__deepseek-v4-pro.json",
+      "bytes": 1655,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_direct__deepseek-v4-pro__conservative.json",
+      "bytes": 1660,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_probability__deepseek-flash.json",
+      "bytes": 2445,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_probability__deepseek-flash__conservative.json",
+      "bytes": 2094,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_probability__deepseek-v4-pro.json",
+      "bytes": 2369,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Flash_probability__deepseek-v4-pro__conservative.json",
+      "bytes": 1977,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Pro_probability__deepseek-flash.json",
+      "bytes": 2404,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Pro_probability__deepseek-flash__conservative.json",
+      "bytes": 2033,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Pro_probability__deepseek-v4-pro.json",
+      "bytes": 2414,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/Pro_probability__deepseek-v4-pro__conservative.json",
+      "bytes": 2028,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_constant__deepseek-flash.json",
+      "bytes": 1557,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_constant__deepseek-flash__conservative.json",
+      "bytes": 1580,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_constant__deepseek-v4-pro.json",
+      "bytes": 1528,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_constant__deepseek-v4-pro__conservative.json",
+      "bytes": 1534,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_ridge__deepseek-flash.json",
+      "bytes": 1731,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_ridge__deepseek-flash__conservative.json",
+      "bytes": 1749,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_ridge__deepseek-v4-pro.json",
+      "bytes": 1710,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/development_ridge__deepseek-v4-pro__conservative.json",
+      "bytes": 1706,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/zero__deepseek-flash.json",
+      "bytes": 1617,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/zero__deepseek-flash__conservative.json",
+      "bytes": 1660,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/zero__deepseek-v4-pro.json",
+      "bytes": 1594,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/baseline_scores/zero__deepseek-v4-pro__conservative.json",
+      "bytes": 1585,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_conservative_draws.jsonl",
+      "bytes": 443954,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_conservative_inputs.jsonl",
+      "bytes": 5015938,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_draws.jsonl",
+      "bytes": 443825,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_inputs.jsonl",
+      "bytes": 5015938,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_paired_judges_draws.jsonl",
+      "bytes": 443891,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/confirmation192_paired_judges_inputs.jsonl",
+      "bytes": 5015938,
+      "records": 224
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/development32_draws.jsonl",
+      "bytes": 61293,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/development32_inputs.jsonl",
+      "bytes": 724854,
+      "records": 32
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/frozen_baselines.json",
+      "bytes": 111,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/native_policy/metadata.json",
+      "bytes": 6162,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/cost_rules.json",
+      "bytes": 104,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_raw_em_draws.jsonl",
+      "bytes": 119266,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_raw_em_inputs.jsonl",
+      "bytes": 101941,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_flash_v1_draws.jsonl",
+      "bytes": 119267,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_flash_v1_inputs.jsonl",
+      "bytes": 101941,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_paired_judges_draws.jsonl",
+      "bytes": 119271,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_paired_judges_inputs.jsonl",
+      "bytes": 101941,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_pro_v1_draws.jsonl",
+      "bytes": 119269,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/development_semantic_pro_v1_inputs.jsonl",
+      "bytes": 101941,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/metadata.json",
+      "bytes": 54301,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/raw.jsonl",
+      "bytes": 76226,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_constant.jsonl",
+      "bytes": 87342,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_effect_affine.jsonl",
+      "bytes": 58304,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_effect_offset.jsonl",
+      "bytes": 57480,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_effect_ridge.jsonl",
+      "bytes": 58243,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_probability_affine.jsonl",
+      "bytes": 84245,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source120_probability_offset.jsonl",
+      "bytes": 74364,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_constant.jsonl",
+      "bytes": 78142,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_effect_affine.jsonl",
+      "bytes": 58233,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_effect_offset.jsonl",
+      "bytes": 57557,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_effect_ridge.jsonl",
+      "bytes": 58228,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_probability_affine.jsonl",
+      "bytes": 88543,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source40_probability_offset.jsonl",
+      "bytes": 74173,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source_offset.jsonl",
+      "bytes": 78617,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/source_residual_affine.jsonl",
+      "bytes": 88686,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_constant.jsonl",
+      "bytes": 77742,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_effect_affine.jsonl",
+      "bytes": 58230,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_effect_offset.jsonl",
+      "bytes": 57769,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_effect_ridge.jsonl",
+      "bytes": 58219,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_guarded_affine.jsonl",
+      "bytes": 88510,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_probability_affine.jsonl",
+      "bytes": 88502,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/predictions/target40_probability_offset.jsonl",
+      "bytes": 74442,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/source120_baseline.json",
+      "bytes": 142,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_raw_em_draws.jsonl",
+      "bytes": 1150246,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_raw_em_inputs.jsonl",
+      "bytes": 1019312,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_flash_v1_draws.jsonl",
+      "bytes": 1150256,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_flash_v1_inputs.jsonl",
+      "bytes": 1019312,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_paired_judges_draws.jsonl",
+      "bytes": 1150336,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_paired_judges_inputs.jsonl",
+      "bytes": 1019312,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_pro_v1_draws.jsonl",
+      "bytes": 1150276,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/natural_queries/test_semantic_pro_v1_inputs.jsonl",
+      "bytes": 1019312,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_refinement_v15/metadata.json",
+      "bytes": 637,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_refinement_v15/public_probes.jsonl",
+      "bytes": 628615,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_revision_v14/metadata.json",
+      "bytes": 476,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_revision_v14/predictions/metadata_ridge.jsonl",
+      "bytes": 388017,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_revision_v14/predictions/prefix_value.jsonl",
+      "bytes": 386423,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/reviewer_revision_v14/predictions/stratum_mean.jsonl",
+      "bytes": 378097,
+      "records": 1632
+    },
+    {
+      "file": "data/forecast_benchmark/splits.json",
+      "bytes": 26024,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16950,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__beta.jsonl",
+      "bytes": 16919,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__constant.jsonl",
+      "bytes": 14954,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 10860,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__effect_affine.jsonl",
+      "bytes": 10870,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__effect_offset.jsonl",
+      "bytes": 10560,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__effect_ridge.jsonl",
+      "bytes": 10882,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__independent_affine.jsonl",
+      "bytes": 16929,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16926,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__isotonic.jsonl",
+      "bytes": 15216,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 16938,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__parent120_constant.jsonl",
+      "bytes": 16874,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__parent120_joint_affine.jsonl",
+      "bytes": 16757,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__parent40_constant.jsonl",
+      "bytes": 15034,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__parent40_joint_affine.jsonl",
+      "bytes": 16874,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__platt.jsonl",
+      "bytes": 16944,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__probability_affine.jsonl",
+      "bytes": 16911,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__probability_offset.jsonl",
+      "bytes": 15454,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__probability_shrink.jsonl",
+      "bytes": 16893,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__raw.jsonl",
+      "bytes": 14122,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16913,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s3__Flash_probability__zero_effect.jsonl",
+      "bytes": 9514,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16880,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__beta.jsonl",
+      "bytes": 16907,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__constant.jsonl",
+      "bytes": 13834,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 9754,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__effect_affine.jsonl",
+      "bytes": 10801,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__effect_offset.jsonl",
+      "bytes": 10600,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__effect_ridge.jsonl",
+      "bytes": 10827,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__independent_affine.jsonl",
+      "bytes": 16765,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16879,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__isotonic.jsonl",
+      "bytes": 15362,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 15859,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__parent120_constant.jsonl",
+      "bytes": 16874,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__parent120_joint_affine.jsonl",
+      "bytes": 16775,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__parent40_constant.jsonl",
+      "bytes": 15034,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__parent40_joint_affine.jsonl",
+      "bytes": 16881,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__platt.jsonl",
+      "bytes": 16878,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__probability_affine.jsonl",
+      "bytes": 16898,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__probability_offset.jsonl",
+      "bytes": 15227,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__probability_shrink.jsonl",
+      "bytes": 16852,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__raw.jsonl",
+      "bytes": 14028,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 15838,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t16384_s6__Flash_probability__zero_effect.jsonl",
+      "bytes": 9514,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16736,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__beta.jsonl",
+      "bytes": 16835,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__constant.jsonl",
+      "bytes": 15034,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 10833,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__effect_affine.jsonl",
+      "bytes": 10811,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__effect_offset.jsonl",
+      "bytes": 10642,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__effect_ridge.jsonl",
+      "bytes": 10812,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__independent_affine.jsonl",
+      "bytes": 16615,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16613,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__isotonic.jsonl",
+      "bytes": 15596,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 16868,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__parent120_constant.jsonl",
+      "bytes": 16794,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__parent120_joint_affine.jsonl",
+      "bytes": 16535,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__parent40_constant.jsonl",
+      "bytes": 14954,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__parent40_joint_affine.jsonl",
+      "bytes": 16798,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__platt.jsonl",
+      "bytes": 16795,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__probability_affine.jsonl",
+      "bytes": 16767,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__probability_offset.jsonl",
+      "bytes": 14752,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__probability_shrink.jsonl",
+      "bytes": 16887,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__raw.jsonl",
+      "bytes": 14145,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16889,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s3__Flash_probability__zero_effect.jsonl",
+      "bytes": 9434,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16887,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__beta.jsonl",
+      "bytes": 16845,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__constant.jsonl",
+      "bytes": 14714,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 10845,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__effect_affine.jsonl",
+      "bytes": 10848,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__effect_offset.jsonl",
+      "bytes": 10511,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__effect_ridge.jsonl",
+      "bytes": 10845,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__independent_affine.jsonl",
+      "bytes": 16821,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16827,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__isotonic.jsonl",
+      "bytes": 15960,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 16876,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__parent120_constant.jsonl",
+      "bytes": 16794,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__parent120_joint_affine.jsonl",
+      "bytes": 16740,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__parent40_constant.jsonl",
+      "bytes": 14954,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__parent40_joint_affine.jsonl",
+      "bytes": 16796,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__platt.jsonl",
+      "bytes": 16805,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__probability_affine.jsonl",
+      "bytes": 16878,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__probability_offset.jsonl",
+      "bytes": 15204,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__probability_shrink.jsonl",
+      "bytes": 16856,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__raw.jsonl",
+      "bytes": 14060,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16899,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/budget_test_t8192_s6__Flash_probability__zero_effect.jsonl",
+      "bytes": 9434,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 97876,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__beta.jsonl",
+      "bytes": 99130,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__constant.jsonl",
+      "bytes": 98906,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 62426,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__effect_affine.jsonl",
+      "bytes": 62556,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__effect_offset.jsonl",
+      "bytes": 61527,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__effect_ridge.jsonl",
+      "bytes": 62530,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__historical_joint_affine.jsonl",
+      "bytes": 99424,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__independent_affine.jsonl",
+      "bytes": 97820,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 97820,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__isotonic.jsonl",
+      "bytes": 92243,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 98055,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__platt.jsonl",
+      "bytes": 99106,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__prefix_value_ridge.jsonl",
+      "bytes": 62546,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 62612,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__probability_affine.jsonl",
+      "bytes": 97840,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__probability_offset.jsonl",
+      "bytes": 91163,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__probability_shrink.jsonl",
+      "bytes": 98801,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__raw.jsonl",
+      "bytes": 82377,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 98942,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Flash_probability__zero_effect.jsonl",
+      "bytes": 54746,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__armwise_shared_inputs.jsonl",
+      "bytes": 98929,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__beta.jsonl",
+      "bytes": 99062,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__constant.jsonl",
+      "bytes": 98906,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__contrast_shrink.jsonl",
+      "bytes": 62568,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__effect_affine.jsonl",
+      "bytes": 62493,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__effect_offset.jsonl",
+      "bytes": 62649,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__effect_ridge.jsonl",
+      "bytes": 62522,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__historical_joint_affine.jsonl",
+      "bytes": 99371,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__independent_affine.jsonl",
+      "bytes": 99075,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 99004,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__isotonic.jsonl",
+      "bytes": 94941,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__level_plus_constant_gain.jsonl",
+      "bytes": 98793,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__platt.jsonl",
+      "bytes": 99116,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__prefix_value_ridge.jsonl",
+      "bytes": 62510,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 62612,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__probability_affine.jsonl",
+      "bytes": 98920,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__probability_offset.jsonl",
+      "bytes": 97021,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__probability_shrink.jsonl",
+      "bytes": 98769,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__raw.jsonl",
+      "bytes": 81253,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 98928,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint0__Pro_probability__zero_effect.jsonl",
+      "bytes": 54746,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 93151,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__beta.jsonl",
+      "bytes": 93181,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__constant.jsonl",
+      "bytes": 92523,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 58698,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__effect_affine.jsonl",
+      "bytes": 58877,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__effect_offset.jsonl",
+      "bytes": 59009,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__effect_ridge.jsonl",
+      "bytes": 58854,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__historical_joint_affine.jsonl",
+      "bytes": 93280,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__independent_affine.jsonl",
+      "bytes": 93316,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 93316,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__isotonic.jsonl",
+      "bytes": 84788,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 92952,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__platt.jsonl",
+      "bytes": 93327,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__prefix_value_ridge.jsonl",
+      "bytes": 58887,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 58856,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__probability_affine.jsonl",
+      "bytes": 93132,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__probability_offset.jsonl",
+      "bytes": 88841,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__probability_shrink.jsonl",
+      "bytes": 93185,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__raw.jsonl",
+      "bytes": 78282,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 92989,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Flash_probability__zero_effect.jsonl",
+      "bytes": 51482,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__armwise_shared_inputs.jsonl",
+      "bytes": 93190,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__beta.jsonl",
+      "bytes": 93248,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__constant.jsonl",
+      "bytes": 92523,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__contrast_shrink.jsonl",
+      "bytes": 58741,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__effect_affine.jsonl",
+      "bytes": 58886,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__effect_offset.jsonl",
+      "bytes": 58857,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__effect_ridge.jsonl",
+      "bytes": 59015,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__historical_joint_affine.jsonl",
+      "bytes": 93231,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__independent_affine.jsonl",
+      "bytes": 93225,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 93225,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__isotonic.jsonl",
+      "bytes": 83659,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__level_plus_constant_gain.jsonl",
+      "bytes": 92893,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__platt.jsonl",
+      "bytes": 93293,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__prefix_value_ridge.jsonl",
+      "bytes": 58925,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 58856,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__probability_affine.jsonl",
+      "bytes": 93085,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__probability_offset.jsonl",
+      "bytes": 91531,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__probability_shrink.jsonl",
+      "bytes": 93094,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__raw.jsonl",
+      "bytes": 77536,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 92984,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint1__Pro_probability__zero_effect.jsonl",
+      "bytes": 51482,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 42232,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__beta.jsonl",
+      "bytes": 42273,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__constant.jsonl",
+      "bytes": 37582,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 26620,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__effect_affine.jsonl",
+      "bytes": 26645,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__effect_offset.jsonl",
+      "bytes": 26443,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__effect_ridge.jsonl",
+      "bytes": 26674,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__historical_joint_affine.jsonl",
+      "bytes": 42213,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__independent_affine.jsonl",
+      "bytes": 42349,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 42172,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__isotonic.jsonl",
+      "bytes": 39243,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 42199,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__platt.jsonl",
+      "bytes": 42389,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__prefix_value_ridge.jsonl",
+      "bytes": 26680,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 26715,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__probability_affine.jsonl",
+      "bytes": 42233,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__probability_offset.jsonl",
+      "bytes": 39840,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__probability_shrink.jsonl",
+      "bytes": 42228,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__raw.jsonl",
+      "bytes": 35220,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 42168,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Flash_probability__zero_effect.jsonl",
+      "bytes": 23372,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__armwise_shared_inputs.jsonl",
+      "bytes": 42266,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__beta.jsonl",
+      "bytes": 42260,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__constant.jsonl",
+      "bytes": 37582,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__contrast_shrink.jsonl",
+      "bytes": 26620,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__effect_affine.jsonl",
+      "bytes": 26660,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__effect_offset.jsonl",
+      "bytes": 26093,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__effect_ridge.jsonl",
+      "bytes": 26662,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__historical_joint_affine.jsonl",
+      "bytes": 42150,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__independent_affine.jsonl",
+      "bytes": 42276,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 42219,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__isotonic.jsonl",
+      "bytes": 38198,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__level_plus_constant_gain.jsonl",
+      "bytes": 42204,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__platt.jsonl",
+      "bytes": 42246,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__prefix_value_ridge.jsonl",
+      "bytes": 26693,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__prefix_value_ridge_no_probability.jsonl",
+      "bytes": 26715,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__probability_affine.jsonl",
+      "bytes": 42257,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__probability_offset.jsonl",
+      "bytes": 39161,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__probability_shrink.jsonl",
+      "bytes": 42123,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__raw.jsonl",
+      "bytes": 35158,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 42132,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/fresh_test_checkpoint2__Pro_probability__zero_effect.jsonl",
+      "bytes": 23372,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__beta.jsonl",
+      "bytes": 16834,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__constant.jsonl",
+      "bytes": 15034,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__contrast_shrink.jsonl",
+      "bytes": 10814,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__effect_affine.jsonl",
+      "bytes": 10815,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__effect_offset.jsonl",
+      "bytes": 10468,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__effect_ridge.jsonl",
+      "bytes": 10775,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__independent_affine.jsonl",
+      "bytes": 16866,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__isotonic.jsonl",
+      "bytes": 16111,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__platt.jsonl",
+      "bytes": 16851,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__probability_affine.jsonl",
+      "bytes": 16545,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__probability_offset.jsonl",
+      "bytes": 15368,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__probability_shrink.jsonl",
+      "bytes": 16791,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__raw.jsonl",
+      "bytes": 14324,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16879,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_forecaster__zero_effect.jsonl",
+      "bytes": 9434,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16744,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__beta.jsonl",
+      "bytes": 16725,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__constant.jsonl",
+      "bytes": 14714,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__contrast_shrink.jsonl",
+      "bytes": 10554,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__effect_affine.jsonl",
+      "bytes": 10527,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__effect_offset.jsonl",
+      "bytes": 10190,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__effect_ridge.jsonl",
+      "bytes": 10539,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__independent_affine.jsonl",
+      "bytes": 16735,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16735,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__isotonic.jsonl",
+      "bytes": 14941,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__level_plus_constant_gain.jsonl",
+      "bytes": 16756,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__platt.jsonl",
+      "bytes": 16745,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__probability_affine.jsonl",
+      "bytes": 16725,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__probability_offset.jsonl",
+      "bytes": 14979,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__probability_shrink.jsonl",
+      "bytes": 16715,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__raw.jsonl",
+      "bytes": 13763,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16693,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__source_DeepSeek40_affine.jsonl",
+      "bytes": 16701,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__source_DeepSeek40_constant.jsonl",
+      "bytes": 14874,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__source_Tavily120_affine.jsonl",
+      "bytes": 16645,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__source_Tavily120_constant.jsonl",
+      "bytes": 16634,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Flash_probability__zero_effect.jsonl",
+      "bytes": 9274,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__armwise_shared_inputs.jsonl",
+      "bytes": 16725,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__beta.jsonl",
+      "bytes": 16765,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__constant.jsonl",
+      "bytes": 14714,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__contrast_shrink.jsonl",
+      "bytes": 10554,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__effect_affine.jsonl",
+      "bytes": 10524,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__effect_offset.jsonl",
+      "bytes": 10258,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__effect_ridge.jsonl",
+      "bytes": 10540,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__independent_affine.jsonl",
+      "bytes": 16714,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__independent_affine_matched_folds.jsonl",
+      "bytes": 16715,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__isotonic.jsonl",
+      "bytes": 16189,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__level_plus_constant_gain.jsonl",
+      "bytes": 16739,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__platt.jsonl",
+      "bytes": 16728,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__probability_affine.jsonl",
+      "bytes": 16735,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__probability_offset.jsonl",
+      "bytes": 15901,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__probability_shrink.jsonl",
+      "bytes": 16736,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__raw.jsonl",
+      "bytes": 13889,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__separate_mean_contrast_shrink.jsonl",
+      "bytes": 16711,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__source_Tavily120_affine.jsonl",
+      "bytes": 16639,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__source_Tavily120_constant.jsonl",
+      "bytes": 16634,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/qwen_test_checkpoint0__Pro_probability__zero_effect.jsonl",
+      "bytes": 9274,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_checkpoint0__finetuned_gain.jsonl",
+      "bytes": 52064,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_checkpoint0__finetuned_probabilities.jsonl",
+      "bytes": 82444,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_checkpoint0__guarded_finetuned_gain.jsonl",
+      "bytes": 52352,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_checkpoint0__guarded_finetuned_probabilities.jsonl",
+      "bytes": 82444,
+      "records": 400
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_transfer__finetuned_gain.jsonl",
+      "bytes": 10735,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_transfer__finetuned_probabilities.jsonl",
+      "bytes": 16814,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_transfer__guarded_finetuned_gain.jsonl",
+      "bytes": 10794,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/baseline_predictions/trainable_transfer__guarded_finetuned_probabilities.jsonl",
+      "bytes": 16814,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_forecasts.jsonl",
+      "bytes": 6021,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_raw_em_draws.jsonl",
+      "bytes": 113493,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_raw_em_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_flash_v1_draws.jsonl",
+      "bytes": 113494,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_flash_v1_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_paired_judges_draws.jsonl",
+      "bytes": 113513,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_paired_judges_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_pro_v1_draws.jsonl",
+      "bytes": 113499,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s3_semantic_pro_v1_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_forecasts.jsonl",
+      "bytes": 6023,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_raw_em_draws.jsonl",
+      "bytes": 113464,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_raw_em_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_flash_v1_draws.jsonl",
+      "bytes": 113465,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_flash_v1_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_paired_judges_draws.jsonl",
+      "bytes": 113489,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_paired_judges_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_pro_v1_draws.jsonl",
+      "bytes": 113470,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t16384_s6_semantic_pro_v1_inputs.jsonl",
+      "bytes": 107099,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_forecasts.jsonl",
+      "bytes": 5979,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_raw_em_draws.jsonl",
+      "bytes": 113282,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_raw_em_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_flash_v1_draws.jsonl",
+      "bytes": 113283,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_flash_v1_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_paired_judges_draws.jsonl",
+      "bytes": 113303,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_paired_judges_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_pro_v1_draws.jsonl",
+      "bytes": 113286,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s3_semantic_pro_v1_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_forecasts.jsonl",
+      "bytes": 5979,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_raw_em_draws.jsonl",
+      "bytes": 113276,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_raw_em_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_flash_v1_draws.jsonl",
+      "bytes": 113278,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_flash_v1_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_paired_judges_draws.jsonl",
+      "bytes": 113296,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_paired_judges_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_pro_v1_draws.jsonl",
+      "bytes": 113279,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_development_t8192_s6_semantic_pro_v1_inputs.jsonl",
+      "bytes": 106939,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_metadata.json",
+      "bytes": 100293,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3__Flash_probability_baseline.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_raw_em_draws.jsonl",
+      "bytes": 217494,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_raw_em_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_flash_v1_draws.jsonl",
+      "bytes": 217494,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_flash_v1_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_paired_judges_draws.jsonl",
+      "bytes": 217527,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_paired_judges_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_pro_v1_draws.jsonl",
+      "bytes": 217501,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s3_semantic_pro_v1_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6__Flash_probability_baseline.json",
+      "bytes": 104,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_raw_em_draws.jsonl",
+      "bytes": 217559,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_raw_em_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_flash_v1_draws.jsonl",
+      "bytes": 217560,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_flash_v1_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_paired_judges_draws.jsonl",
+      "bytes": 217597,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_paired_judges_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_pro_v1_draws.jsonl",
+      "bytes": 217566,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t16384_s6_semantic_pro_v1_inputs.jsonl",
+      "bytes": 214220,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3__Flash_probability_baseline.json",
+      "bytes": 120,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_raw_em_draws.jsonl",
+      "bytes": 216826,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_raw_em_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_flash_v1_draws.jsonl",
+      "bytes": 216827,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_flash_v1_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_paired_judges_draws.jsonl",
+      "bytes": 216856,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_paired_judges_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_pro_v1_draws.jsonl",
+      "bytes": 216833,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s3_semantic_pro_v1_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6__Flash_probability_baseline.json",
+      "bytes": 116,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_raw_em_draws.jsonl",
+      "bytes": 216926,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_raw_em_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_flash_v1_draws.jsonl",
+      "bytes": 216926,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_flash_v1_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_paired_judges_draws.jsonl",
+      "bytes": 216952,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_paired_judges_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_pro_v1_draws.jsonl",
+      "bytes": 216934,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/budget_test_t8192_s6_semantic_pro_v1_inputs.jsonl",
+      "bytes": 213900,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_forecasts.jsonl",
+      "bytes": 21397,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_raw_em_draws.jsonl",
+      "bytes": 332534,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_raw_em_inputs.jsonl",
+      "bytes": 324621,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_flash_v1_draws.jsonl",
+      "bytes": 332535,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "bytes": 324621,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_paired_judges_draws.jsonl",
+      "bytes": 332578,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_paired_judges_inputs.jsonl",
+      "bytes": 324621,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_pro_v1_draws.jsonl",
+      "bytes": 332543,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint0_semantic_pro_v1_inputs.jsonl",
+      "bytes": 324621,
+      "records": 120
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_forecasts.jsonl",
+      "bytes": 20359,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_raw_em_draws.jsonl",
+      "bytes": 316665,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_raw_em_inputs.jsonl",
+      "bytes": 1123816,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_flash_v1_draws.jsonl",
+      "bytes": 316667,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_flash_v1_inputs.jsonl",
+      "bytes": 1123816,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_paired_judges_draws.jsonl",
+      "bytes": 316693,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_paired_judges_inputs.jsonl",
+      "bytes": 1123816,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_pro_v1_draws.jsonl",
+      "bytes": 316671,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint1_semantic_pro_v1_inputs.jsonl",
+      "bytes": 1123816,
+      "records": 114
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_forecasts.jsonl",
+      "bytes": 7161,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_raw_em_draws.jsonl",
+      "bytes": 111681,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_raw_em_inputs.jsonl",
+      "bytes": 716028,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_flash_v1_draws.jsonl",
+      "bytes": 111681,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_flash_v1_inputs.jsonl",
+      "bytes": 716028,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_paired_judges_draws.jsonl",
+      "bytes": 111702,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_paired_judges_inputs.jsonl",
+      "bytes": 716028,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_pro_v1_draws.jsonl",
+      "bytes": 111691,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_development_checkpoint2_semantic_pro_v1_inputs.jsonl",
+      "bytes": 716028,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_metadata.json",
+      "bytes": 274975,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0__Flash_probability_baseline.json",
+      "bytes": 142,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0__Pro_probability_baseline.json",
+      "bytes": 142,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_raw_em_draws.jsonl",
+      "bytes": 1275623,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_raw_em_inputs.jsonl",
+      "bytes": 1298904,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_flash_v1_draws.jsonl",
+      "bytes": 1275631,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "bytes": 1298904,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_paired_judges_draws.jsonl",
+      "bytes": 1275810,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_paired_judges_inputs.jsonl",
+      "bytes": 1298904,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_pro_v1_draws.jsonl",
+      "bytes": 1275687,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint0_semantic_pro_v1_inputs.jsonl",
+      "bytes": 1298904,
+      "records": 480
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1__Flash_probability_baseline.json",
+      "bytes": 141,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1__Pro_probability_baseline.json",
+      "bytes": 141,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_raw_em_draws.jsonl",
+      "bytes": 1202258,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_raw_em_inputs.jsonl",
+      "bytes": 4719908,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_flash_v1_draws.jsonl",
+      "bytes": 1202271,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_flash_v1_inputs.jsonl",
+      "bytes": 4719908,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_paired_judges_draws.jsonl",
+      "bytes": 1202446,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_paired_judges_inputs.jsonl",
+      "bytes": 4719908,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_pro_v1_draws.jsonl",
+      "bytes": 1202317,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint1_semantic_pro_v1_inputs.jsonl",
+      "bytes": 4719908,
+      "records": 451
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2__Flash_probability_baseline.json",
+      "bytes": 120,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2__Pro_probability_baseline.json",
+      "bytes": 120,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_raw_em_draws.jsonl",
+      "bytes": 544087,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_raw_em_inputs.jsonl",
+      "bytes": 3969793,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_flash_v1_draws.jsonl",
+      "bytes": 544097,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_flash_v1_inputs.jsonl",
+      "bytes": 3969793,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_paired_judges_draws.jsonl",
+      "bytes": 544197,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_paired_judges_inputs.jsonl",
+      "bytes": 3969793,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_pro_v1_draws.jsonl",
+      "bytes": 544130,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/fresh_test_checkpoint2_semantic_pro_v1_inputs.jsonl",
+      "bytes": 3969793,
+      "records": 203
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_forecasts.jsonl",
+      "bytes": 7211,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_raw_em_draws.jsonl",
+      "bytes": 119154,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_raw_em_inputs.jsonl",
+      "bytes": 119059,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_flash_v1_draws.jsonl",
+      "bytes": 119154,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "bytes": 119059,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_paired_judges_draws.jsonl",
+      "bytes": 119166,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_paired_judges_inputs.jsonl",
+      "bytes": 119059,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_pro_v1_draws.jsonl",
+      "bytes": 119154,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_development_checkpoint0_semantic_pro_v1_inputs.jsonl",
+      "bytes": 119059,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_forecaster_baseline.json",
+      "bytes": 120,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_forecaster_development_forecasts.jsonl",
+      "bytes": 5877,
+      "records": 40
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_forecaster_metadata.json",
+      "bytes": 18088,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_metadata.json",
+      "bytes": 54439,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0__Flash_probability_baseline.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0__Pro_probability_baseline.json",
+      "bytes": 118,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_raw_em_draws.jsonl",
+      "bytes": 229332,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_raw_em_inputs.jsonl",
+      "bytes": 238140,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_flash_v1_draws.jsonl",
+      "bytes": 229332,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "bytes": 238140,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_paired_judges_draws.jsonl",
+      "bytes": 229344,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_paired_judges_inputs.jsonl",
+      "bytes": 238140,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_pro_v1_draws.jsonl",
+      "bytes": 229333,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/qwen_test_checkpoint0_semantic_pro_v1_inputs.jsonl",
+      "bytes": 238140,
+      "records": 80
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/trainable_transfer_metadata.json",
+      "bytes": 4996,
+      "records": null
+    },
+    {
+      "file": "data/forecast_benchmark/strengthening/trainable_value_metadata.json",
+      "bytes": 8195,
+      "records": null
+    }
+  ],
+  "exported_files": 998,
+  "exported_bytes": 266098892,
+  "exported_jsonl_rows": 234378,
+  "sanitization": {
+    "removed_sensitive_or_authorization_fields": 2,
+    "removed_absolute_local_paths": 0
+  },
+  "paper_resource": {
+    "distinct_actor_executions": 45632,
+    "forecasts": 8880,
+    "questions": 3168
+  },
+  "count_scope": "Endpoint exports overlap. Row totals do not count unique executions or independent questions.",
+  "excluded": [
+    "raw provider request logs",
+    "search caches",
+    "credentials",
+    "trained models",
+    "paper PDFs",
+    "local research workspace"
+  ]
+}

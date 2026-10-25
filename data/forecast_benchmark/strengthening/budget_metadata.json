@@ -1,0 +1,3317 @@
+{
+  "created_utc": "2026-10-18T02:06:46.838378+00:00",
+  "study": "budget",
+  "frames": [
+    {
+      "name": "budget_development_t16384_s3",
+      "split": "development",
+      "questions": 40,
+      "actor_units": 40,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_development_t16384_s3_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_development_t16384_s3_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_development_t16384_s3_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_development_t16384_s3_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_development_t16384_s3_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_development_t16384_s6",
+      "split": "development",
+      "questions": 40,
+      "actor_units": 40,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_development_t16384_s6_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_development_t16384_s6_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_development_t16384_s6_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_development_t16384_s6_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_development_t16384_s6_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_development_t8192_s3",
+      "split": "development",
+      "questions": 40,
+      "actor_units": 40,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_development_t8192_s3_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_development_t8192_s3_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_development_t8192_s3_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_development_t8192_s3_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_development_t8192_s3_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_development_t8192_s6",
+      "split": "development",
+      "questions": 40,
+      "actor_units": 40,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_development_t8192_s6_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_development_t8192_s6_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_development_t8192_s6_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_development_t8192_s6_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_development_t8192_s6_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_test_t16384_s3",
+      "split": "test",
+      "questions": 80,
+      "actor_units": 80,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_test_t16384_s3_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_test_t16384_s3_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_test_t16384_s3_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_test_t16384_s3_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_test_t16384_s3_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_test_t16384_s6",
+      "split": "test",
+      "questions": 80,
+      "actor_units": 80,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_test_t16384_s6_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_test_t16384_s6_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_test_t16384_s6_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_test_t16384_s6_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_test_t16384_s6_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_test_t8192_s3",
+      "split": "test",
+      "questions": 80,
+      "actor_units": 80,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_test_t8192_s3_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_test_t8192_s3_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_test_t8192_s3_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_test_t8192_s3_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_test_t8192_s3_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "budget_test_t8192_s6",
+      "split": "test",
+      "questions": 80,
+      "actor_units": 80,
+      "actors": [
+        "deepseek-flash"
+      ],
+      "inputs": "budget_test_t8192_s6_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "budget_test_t8192_s6_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "budget_test_t8192_s6_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "budget_test_t8192_s6_semantic_paired_judges_draws.jsonl",
+        "raw_em": "budget_test_t8192_s6_raw_em_draws.jsonl"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t16384_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s3",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_flash_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_pro_v1",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "semantic_paired_judges",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent120_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "parent40_joint_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "budget_test_t8192_s6",
+      "endpoint": "raw_em",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    }
+  ],
+  "unique_actor_executions": 2880,
+  "interpretation": "Checkpoint and budget files reuse questions; analyze each declared frame or retain question/component pairing across frames. Shared answer case identifiers persist across frames. Shared THINK executions in the budget study count once as acquired data.",
+  "predictor_input": "Use only the input object for prediction. Unit identifiers join records and carry no permitted predictive features. Reward, strata and resource fields are evaluator-side data.",
+  "measurement": "Flash and Pro frozen-reference-equivalence endpoints, paired disagreement sensitivity andrawEM. Human ratings:0. Reused answer labels andshared execution origins remain in source records.",
+  "timing": "Original forecasts and primary prediction files precede their corresponding actor outcomes. Additional parent-constant controls, when present, derive retrospectively from prefrozen source fits. New algorithms on these released outcomes are evaluated as offline benchmarks.",
+  "derived_control_manifest": {
+    "created_utc": "2026-10-18T02:06:27.785562+00:00",
+    "predictions": 640,
+    "classification": "Retrospective baseline projection",
+    "source_fit_seal_utc": "2026-10-18T01:29:26.774094+00:00",
+    "scope": "Constants come from the source40/source120 fits sealed before target test actors. This additional comparison was specified after target analysis; it isolates reuse of a source mean from reuse of state-dependent probability maps."
+  },
+  "release": "Local export; no public upload."
+}

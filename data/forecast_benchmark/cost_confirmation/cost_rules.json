@@ -1,0 +1,10 @@
+{
+  "mean_extra_actor_tokens": {
+    "source": 5141.397916666667,
+    "target": 7007.49375
+  },
+  "primary_penalty_per1000": 0.005,
+  "primary_weighting": "equal_strata",
+  "bootstrap_seed": 2026101815,
+  "bootstrap_draws": 10000
+}

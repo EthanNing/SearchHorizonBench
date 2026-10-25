@@ -1,0 +1,7 @@
+{
+  "constant_effect": 0.03947368421052633,
+  "probability_priors": {
+    "THINK": 0.7039473684210527,
+    "SEARCH": 0.743421052631579
+  }
+}

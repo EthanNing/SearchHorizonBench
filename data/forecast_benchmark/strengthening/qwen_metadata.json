@@ -1,0 +1,1677 @@
+{
+  "created_utc": "2026-10-18T15:26:27.120666+00:00",
+  "study": "qwen",
+  "frames": [
+    {
+      "name": "qwen_development_checkpoint0",
+      "split": "development",
+      "questions": 40,
+      "actor_units": 40,
+      "actors": [
+        "Qwen3-4B-Q4_K_M"
+      ],
+      "inputs": "qwen_development_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "qwen_development_checkpoint0_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "qwen_development_checkpoint0_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "qwen_development_checkpoint0_semantic_paired_judges_draws.jsonl",
+        "raw_em": "qwen_development_checkpoint0_raw_em_draws.jsonl"
+      }
+    },
+    {
+      "name": "qwen_test_checkpoint0",
+      "split": "test",
+      "questions": 80,
+      "actor_units": 80,
+      "actors": [
+        "Qwen3-4B-Q4_K_M"
+      ],
+      "inputs": "qwen_test_checkpoint0_semantic_flash_v1_inputs.jsonl",
+      "endpoints": {
+        "semantic_flash_v1": "qwen_test_checkpoint0_semantic_flash_v1_draws.jsonl",
+        "semantic_pro_v1": "qwen_test_checkpoint0_semantic_pro_v1_draws.jsonl",
+        "semantic_paired_judges": "qwen_test_checkpoint0_semantic_paired_judges_draws.jsonl",
+        "raw_em": "qwen_test_checkpoint0_raw_em_draws.jsonl"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_flash_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_pro_v1",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "semantic_paired_judges",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_DeepSeek40_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Flash_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "armwise_shared_inputs",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "beta",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "independent_affine_matched_folds",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "isotonic",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "level_plus_constant_gain",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "platt",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "probability_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "intervals_checked": true
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "separate_mean_contrast_shrink",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_affine",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "source_Tavily120_constant",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    },
+    {
+      "frame": "qwen_test_checkpoint0",
+      "endpoint": "raw_em",
+      "actor": "Qwen3-4B-Q4_K_M",
+      "teacher": "Pro_probability",
+      "method": "zero_effect",
+      "point_estimates_match": true,
+      "intervals_checked": false
+    }
+  ],
+  "unique_actor_executions": 960,
+  "interpretation": "Actor-family extension on questions shared with the checkpoint and budget studies. Qwen executions are newly acquired; preserve question pairing for cross-study comparisons. The exported answer-case identifiers preserve shared uncertainty within this study.",
+  "predictor_input": "Use only the input object for prediction. Unit identifiers join records and carry no permitted predictive features. Reward, strata and resource fields are evaluator-side data.",
+  "measurement": "Flash and Pro frozen-reference-equivalence endpoints, paired disagreement sensitivity andrawEM. Human ratings:0. Reused answer labels andshared execution origins remain in source records.",
+  "timing": "Original forecasts and primary prediction files precede their corresponding actor outcomes. Additional parent-constant controls, when present, derive retrospectively from prefrozen source fits. New algorithms on these released outcomes are evaluated as offline benchmarks.",
+  "derived_control_manifest": null,
+  "release": "Local export; no public upload.",
+  "actor_registration": {
+    "created_utc": "2026-10-18T07:26:27.128946+00:00",
+    "stage": "prospective_native_policy_value",
+    "classification": "Secondary prospective actor-family extension on previously studied questions; new actor outcomes.",
+    "theme": "Use execution experience to improve estimates of whether continued search is worthwhile.",
+    "cohort": {
+      "development": 40,
+      "test": 80,
+      "strata": 5,
+      "draws_per_action": 4,
+      "unique_actor_outcomes": 960
+    },
+    "selection": "The complete fixed 40/80 cohort of the prior DeepSeek budget study. No local benchmark actor output exists at registration.",
+    "actor": {
+      "model": "Qwen3-4B-Q4_K_M",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "runtime": "llama.cpp b11669, locally compiled with CUDA 12.8.93",
+      "context_tokens": 16384,
+      "parallel_slots": 1,
+      "kv_cache": "f16",
+      "completion_cap": 8192,
+      "search_limit": 3,
+      "thinking": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "seed": "One preassigned random integer per draw; add the model-call step for later calls.",
+      "history": "Original API messages; the official embedded Qwen chat template renders each request."
+    },
+    "execution": "Reuse the native paired continuation executor. THINK receives the final-answer instruction and tool_choice none. SEARCH may finish or search with automatic tool choice. All reasoning, tool arguments and final output share the 8192 completion ceiling. The server disables context shifting. Context overflow is a scored delivery failure.",
+    "forecasts": "Flash and Pro each forecast all 120 units before any Qwen actor execution. Forecast inputs describe Qwen, quantization, sampling, context, tools and finite budgets. Algorithmic invalid forecasts retain 0.5/0.5; transport failures remain pending.",
+    "fitting": "Use only the forty Qwen development questions and Flash reference-equivalence outcomes. Four stratified folds select penalties in the existing implementations. Freeze fitted maps, test forecasts and development mean costs before all test actors.",
+    "methods": {
+      "Flash_probability": [
+        "raw",
+        "constant",
+        "probability_offset",
+        "probability_affine",
+        "effect_offset",
+        "effect_affine",
+        "effect_ridge",
+        "probability_shrink",
+        "separate_mean_contrast_shrink",
+        "independent_affine",
+        "isotonic",
+        "platt",
+        "beta",
+        "contrast_shrink",
+        "zero_effect",
+        "independent_affine_matched_folds",
+        "armwise_shared_inputs",
+        "level_plus_constant_gain",
+        "source_Tavily120_affine",
+        "source_Tavily120_constant",
+        "source_DeepSeek40_affine",
+        "source_DeepSeek40_constant"
+      ],
+      "Pro_probability": [
+        "raw",
+        "constant",
+        "probability_offset",
+        "probability_affine",
+        "effect_offset",
+        "effect_affine",
+        "effect_ridge",
+        "probability_shrink",
+        "separate_mean_contrast_shrink",
+        "independent_affine",
+        "isotonic",
+        "platt",
+        "beta",
+        "contrast_shrink",
+        "zero_effect",
+        "independent_affine_matched_folds",
+        "armwise_shared_inputs",
+        "level_plus_constant_gain",
+        "source_Tavily120_affine",
+        "source_Tavily120_constant"
+      ]
+    },
+    "source_controls": "Tavily120 maps match each forecaster. DeepSeek40 maps exist for Flash forecasts and isolate actor-family transfer under the same search interface and question split. Each transferred map retains its own training constant.",
+    "primary_extension_comparisons": "On all eighty test questions, Flash forecasts and Flash judgments: shared-input affine versus raw effect risk, and affine versus local constant average Brier. Both one-sided 97.5% upper bounds must be below zero for this replication criterion. This is a secondary extension with its own stated target; the original 400-question stronger primary criterion remains unchanged.",
+    "strong_controls": "Report paired effect and Brier differences against independent affine with matched folds, armwise shared inputs, learned level plus mean gain, and all source constants. Raw correction, conditional gain skill and controller utility remain distinct claims.",
+    "measurement": "Reuse the existing answer-blind Flash/Pro reference-equivalence pipeline, automatic exact-reference matches and identical-answer reuse. Retain the paired-judge and raw-EM endpoints. Carry forward the independent question-source audit; report all/source-supported and shared-unknown-reference bounds. AI reviews remain AI reviews.",
+    "inference": "10,000 support-component bootstrap samples with question-weighted means. Repeats and teachers do not multiply question count. Other methods, endpoints and subsets are secondary descriptive intervals.",
+    "planning_precision": {
+      "source": "The same eighty questions in the completed DeepSeek t8192_s3 study, with 71 support components.",
+      "effect_affine_minus_raw_source_component_SE": 0.013433538748663258,
+      "Brier_affine_minus_constant_source_component_SE": 0.009996221107129737,
+      "illustrative_80_percent_MDE_effect": 0.037635402158254984,
+      "illustrative_80_percent_MDE_Brier": 0.028005413053734673,
+      "interpretation": "These normal-approximation values use 2.8016 times the source bootstrap standard error for a 2.5% one-sided test. Actor transfer can change variance. The fixed matched cohort tests sizeable correction effects; it does not guarantee detection of small differences between fitted calibrators."
+    },
+    "routing": "Freeze the mean SEARCH-minus-THINK token cost from Qwen development. Route using forecast gain minus lambda times that cost, with THINK on ties. Report all five fixed lambda values. Per-query predictors pay their DeepSeek forecast tokens; constants and zero-effect policies require no query forecast. Actor and predictor token totals also remain separately reported because tokenizers and hardware differ.",
+    "token_penalties_per1000": [
+      0.0,
+      0.001,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "failures": "Length, context and malformed output score as delivery failures. Stop acquisition on the first infrastructure failure, retain partial work, and resolve the service before resuming. No outcome-based subgroup selection, early stopping or gate-driven removal.",
+    "resources": {
+      "request_start": {
+        "model": 75398,
+        "search": 18338
+      },
+      "paid_model_cap": 81398,
+      "search_cap": 21538,
+      "raw_forecasts": 240,
+      "Tavily_calls": 0,
+      "local_model_calls_maximum": 2400,
+      "local_completion_tokens_maximum": 7864320
+    },
+    "runtime": "The measured engineering range of 65-76 generated tokens/s implies about 29-34 hours at the full completion ceiling, before prompt processing and search. Actual task runtime is unknown at registration.",
+    "seed": 2026101809
+  }
+}

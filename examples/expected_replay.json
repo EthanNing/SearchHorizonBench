@@ -1,0 +1,269 @@
+{
+  "value": {
+    "actor_model": "deepseek-flash",
+    "questions": 1632,
+    "constant_effect_baseline": 0.04166666666666663,
+    "weighting": "equal_strata",
+    "empty_stratum_bootstrap_draws_redrawn": 0,
+    "intervals_estimable": true,
+    "forecast_statuses": {
+      "ok": 1632
+    },
+    "metrics": {
+      "effect": {
+        "mean": 0.05675,
+        "support_component_bootstrap95": [
+          0.0401445038255767,
+          0.07574067768992691
+        ]
+      },
+      "squared_effect": {
+        "mean": 0.048999999999999995,
+        "support_component_bootstrap95": [
+          0.038451226464855194,
+          0.06090187904053629
+        ]
+      },
+      "corrected_effect_MSE": {
+        "mean": 0.04585857456640416,
+        "support_component_bootstrap95": [
+          0.03631160016481113,
+          0.056471127608265594
+        ]
+      },
+      "excess_risk_vs_constant": {
+        "mean": -0.00014836987804027916,
+        "support_component_bootstrap95": [
+          -0.000860478431550968,
+          0.0005609820323228493
+        ]
+      },
+      "shared_assignment_risk_lower": {
+        "mean": -0.00019532773680065618,
+        "support_component_bootstrap95": [
+          -0.0009094375208999473,
+          0.0005102892445410368
+        ]
+      },
+      "shared_assignment_risk_upper": {
+        "mean": -0.00012246166142773366,
+        "support_component_bootstrap95": [
+          -0.0008372216382275614,
+          0.0005867562673813496
+        ]
+      },
+      "route_gain_vs_reuse": {
+        "mean": 0.056625,
+        "support_component_bootstrap95": [
+          0.03999529841975088,
+          0.07564553764318889
+        ]
+      },
+      "Brier_reuse": {
+        "mean": 0.1868007226642623,
+        "support_component_bootstrap95": [
+          0.17476219244805952,
+          0.19679821261832403
+        ]
+      },
+      "Brier_difference_vs_prior_reuse": {
+        "mean": -0.038616117613515515,
+        "support_component_bootstrap95": [
+          -0.05802603140235336,
+          -0.01951985356299643
+        ]
+      },
+      "Brier_new": {
+        "mean": 0.17259671638189117,
+        "support_component_bootstrap95": [
+          0.15988328460959628,
+          0.1834580280142048
+        ]
+      },
+      "Brier_difference_vs_prior_new": {
+        "mean": -0.03098366556255331,
+        "support_component_bootstrap95": [
+          -0.047720386921692844,
+          -0.013881977592660457
+        ]
+      }
+    },
+    "interpretation": "Forecasts must be fixed independently of evaluation outcomes. Unresolved rewards usezero forpoint estimates andshared case assignments forriskbounds. Negative finite-sample moment estimates remainunclipped. Saved-branch routing excludes predictor overhead anddoesnot establishdeploymentbenefit."
+  },
+  "policy": {
+    "actor_model": "deepseek-flash",
+    "questions": 1632,
+    "weighting": "equal_strata",
+    "intervals_estimable": true,
+    "mean_extra_actor_tokens": 7007.49375,
+    "token_penalty_per1000": 0.005,
+    "empty_stratum_bootstrap_draws_redrawn": 0,
+    "metrics": {
+      "SEARCH_fraction": {
+        "mean": 0.6952500000000004,
+        "bootstrap95": [
+          0.6707903238161325,
+          0.7163335586357523
+        ],
+        "one_sided97_5_lower": 0.6707903238161325,
+        "one_sided97_5_upper": 0.7163335586357523
+      },
+      "success": {
+        "mean": 0.7056250000000004,
+        "bootstrap95": [
+          0.6676488797819361,
+          0.755292605520981
+        ],
+        "one_sided97_5_lower": 0.6676488797819361,
+        "one_sided97_5_upper": 0.755292605520981
+      },
+      "actor_tokens": {
+        "mean": 6474.4865625,
+        "bootstrap95": [
+          5498.078576163813,
+          7280.157588195853
+        ],
+        "one_sided97_5_lower": 5498.078576163813,
+        "one_sided97_5_upper": 7280.157588195853
+      },
+      "predictor_API_tokens": {
+        "mean": 1339.12525,
+        "bootstrap95": [
+          1332.3836459109011,
+          1345.3040002450332
+        ],
+        "one_sided97_5_lower": 1332.3836459109011,
+        "one_sided97_5_upper": 1345.3040002450332
+      },
+      "total_API_tokens": {
+        "mean": 7813.611812499999,
+        "bootstrap95": [
+          6835.046656751905,
+          8619.05579451024
+        ],
+        "one_sided97_5_lower": 6835.046656751905,
+        "one_sided97_5_upper": 8619.05579451024
+      },
+      "utility": {
+        "mean": 0.6665569409375001,
+        "bootstrap95": [
+          0.6258678019317752,
+          0.7202232126663751
+        ],
+        "one_sided97_5_lower": 0.6258678019317752,
+        "one_sided97_5_upper": 0.7202232126663751
+      },
+      "utility_vs_matched_rate_random": {
+        "mean": -0.0037487628201560153,
+        "bootstrap95": [
+          -0.009502783900967468,
+          0.0024477946659970094
+        ]
+      },
+      "utility_vs_THINK": {
+        "mean": 0.013081253437499999,
+        "bootstrap95": [
+          -0.0033048603321587226,
+          0.03215510041752813
+        ],
+        "one_sided97_5_lower": -0.0033048603321587226,
+        "one_sided97_5_upper": 0.03215510041752813
+      },
+      "success_vs_THINK": {
+        "mean": 0.046625,
+        "bootstrap95": [
+          0.03056320306594607,
+          0.06544007581972432
+        ],
+        "one_sided97_5_lower": 0.03056320306594607,
+        "one_sided97_5_upper": 0.06544007581972432
+      },
+      "shared_judge_bounds_vs_THINK": {
+        "lower": {
+          "mean": 0.012206253437499974,
+          "bootstrap95": [
+            -0.004187379304909388,
+            0.03119764237759135
+          ],
+          "one_sided97_5_lower": -0.004187379304909388,
+          "one_sided97_5_upper": 0.03119764237759135
+        },
+        "upper": {
+          "mean": 0.01445625343749998,
+          "bootstrap95": [
+            -0.0021199515769691753,
+            0.033661409610521505
+          ],
+          "one_sided97_5_lower": -0.0021199515769691753,
+          "one_sided97_5_upper": 0.033661409610521505
+        }
+      },
+      "utility_vs_SEARCH": {
+        "mean": -0.0111258896875,
+        "bootstrap95": [
+          -0.015843267295298606,
+          -0.00690155871292895
+        ],
+        "one_sided97_5_lower": -0.015843267295298606,
+        "one_sided97_5_upper": -0.00690155871292895
+      },
+      "success_vs_SEARCH": {
+        "mean": -0.010125,
+        "bootstrap95": [
+          -0.014877654252666149,
+          -0.005885881382041349
+        ],
+        "one_sided97_5_lower": -0.014877654252666149,
+        "one_sided97_5_upper": -0.005885881382041349
+      },
+      "shared_judge_bounds_vs_SEARCH": {
+        "lower": {
+          "mean": -0.011125889687500005,
+          "bootstrap95": [
+            -0.015843267295298617,
+            -0.006901558712928955
+          ],
+          "one_sided97_5_lower": -0.015843267295298617,
+          "one_sided97_5_upper": -0.006901558712928955
+        },
+        "upper": {
+          "mean": -0.010750889687500006,
+          "bootstrap95": [
+            -0.015357521613122286,
+            -0.006570615522047493
+          ],
+          "one_sided97_5_lower": -0.015357521613122286,
+          "one_sided97_5_upper": -0.006570615522047493
+        }
+      }
+    },
+    "scope": "One frozen threshold decision on saved branches. API-token utility charges supplied prediction and actor tokens; CPU time and acquisition expenses remain separate."
+  },
+  "collection": {
+    "tasks": 96,
+    "components": 71,
+    "kind": "expected_rewards",
+    "gain_MSE": {
+      "mean": 0.026441556533126243,
+      "bootstrap95": [
+        0.010915065535843017,
+        0.04174052064473628
+      ]
+    },
+    "gain_MSE_vs_development_mean": {
+      "mean": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "outcome_squared_score": {
+      "mean": 0.09585417447262501,
+      "bootstrap95": [
+        0.07015472112205708,
+        0.11577617308005991
+      ]
+    },
+    "scope": "Offline scoring of frozen bounded set rewards. Supporting components are the independent sampling clusters; repeated draws are not additional tasks."
+  }
+}

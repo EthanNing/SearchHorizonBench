@@ -1,0 +1,17 @@
+{
+  "classification": "Retrospective controls with fits based on original development outcomes.",
+  "draws_directory": "../cost_confirmation",
+  "methods": [
+    "stratum_mean",
+    "metadata_ridge",
+    "prefix_value"
+  ],
+  "metadata_only_controls": [
+    "stratum_mean",
+    "metadata_ridge"
+  ],
+  "fits": "../../../runs/reviewer_revision_v14/fits.json",
+  "analysis": "../../../runs/reviewer_revision_v14/analysis.json",
+  "new_model_calls": 0,
+  "new_search_calls": 0
+}

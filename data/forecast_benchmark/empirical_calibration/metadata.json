@@ -1,0 +1,369 @@
+{
+  "created_utc": "2026-10-16T08:43:12.180641+00:00",
+  "theme": "Empirically grounded search-value estimation",
+  "historical": {
+    "questions": 224,
+    "inputs": "historical224_inputs.jsonl",
+    "draws": "historical224_draws.jsonl",
+    "raw_forecasts": "historical224_forecasts.jsonl"
+  },
+  "static_evaluation": {
+    "questions": 160,
+    "actors": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "inputs": "static160_inputs.jsonl",
+    "draws": "static160_draws.jsonl"
+  },
+  "live": {
+    "development": 24,
+    "test": 54,
+    "backend": "Tavily basic",
+    "task": "MuSiQue2/3/4hop",
+    "shared_support_components": 42
+  },
+  "score": "scripts/score_value_forecasts.py;component inference activates when support_component is provided.",
+  "fallback": "Exported numeric algorithm predictions already include the registered0.5/0.5 raw-delivery fallback and subsequent adjustment;all exported statuses areok. Actual raw delivery failures remain in source decision files and study reporting.",
+  "measurement": "Reference-equivalent correctness;null rewards and shared case identities retain uncertainty. AI ratings are fallible and human review is pending.",
+  "timing": "Own study forecasts were frozen before their evaluation outcomes. New algorithms evaluated on released outcomes use an offline benchmark.",
+  "checks": [
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "static160",
+      "actor": "deepseek-v4-pro",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Flash_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "raw",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "constant",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "probability_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "probability_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_offset",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_affine",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    },
+    {
+      "frame": "live_test",
+      "actor": "deepseek-flash",
+      "teacher": "Pro_probability",
+      "method": "effect_ridge",
+      "point_estimates_match": true,
+      "effect_and_route_intervals_match": true
+    }
+  ],
+  "release": "Local export only;no public upload."
+}

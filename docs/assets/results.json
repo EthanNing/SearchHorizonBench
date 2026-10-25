@@ -1,0 +1,139 @@
+{
+  "source": "runs/decision_information_factorial_v2/analysis.json",
+  "target": "Test-1632, Flash reference-equivalent correctness",
+  "n": 1632,
+  "selection": "Two selection draws per action; two disjoint evaluation draws; all 36 splits. Selection observations are free for all three displayed rules.",
+  "bootstrap": "95% support-component bootstrap intervals",
+  "prices": {
+    "0.0": {
+      "constant": "SEARCH",
+      "rules": {
+        "gain_only": {
+          "mean": -0.0035520833333333333,
+          "ci": [
+            -0.014196312855445216,
+            0.005542648923233216
+          ]
+        },
+        "cost_only": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "gain_and_cost": {
+          "mean": -0.0035520833333333333,
+          "ci": [
+            -0.014196312855445216,
+            0.005542648923233216
+          ]
+        }
+      }
+    },
+    "0.001": {
+      "constant": "SEARCH",
+      "rules": {
+        "gain_only": {
+          "mean": 0.002111863416666666,
+          "ci": [
+            -0.00868776434806642,
+            0.011424211987089105
+          ]
+        },
+        "cost_only": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "gain_and_cost": {
+          "mean": 0.0022632990416666665,
+          "ci": [
+            -0.008532834273713458,
+            0.011486141302701338
+          ]
+        }
+      }
+    },
+    "0.005": {
+      "constant": "SEARCH",
+      "rules": {
+        "gain_only": {
+          "mean": 0.02476765041666667,
+          "ci": [
+            0.012831690933263655,
+            0.03516924076824093
+          ]
+        },
+        "cost_only": {
+          "mean": 0.0067753504166666685,
+          "ci": [
+            -0.006352681875776474,
+            0.017333166353270996
+          ]
+        },
+        "gain_and_cost": {
+          "mean": 0.02488593965277778,
+          "ci": [
+            0.012998833596848022,
+            0.035332725947989335
+          ]
+        }
+      }
+    },
+    "0.01": {
+      "constant": "THINK",
+      "rules": {
+        "gain_only": {
+          "mean": 0.04475167041666667,
+          "ci": [
+            0.032969534272214704,
+            0.05857899973986301
+          ]
+        },
+        "cost_only": {
+          "mean": 0.01912760204861111,
+          "ci": [
+            0.00782233924877409,
+            0.03195050469312196
+          ]
+        },
+        "gain_and_cost": {
+          "mean": 0.044828526666666674,
+          "ci": [
+            0.0330428503778773,
+            0.0586288514205101
+          ]
+        }
+      }
+    },
+    "0.02": {
+      "constant": "THINK",
+      "rules": {
+        "gain_only": {
+          "mean": 0.03630542416666667,
+          "ci": [
+            0.024180806116581167,
+            0.050278213166599285
+          ]
+        },
+        "cost_only": {
+          "mean": 0.013701242013888889,
+          "ci": [
+            0.00533769574730385,
+            0.023571516314581594
+          ]
+        },
+        "gain_and_cost": {
+          "mean": 0.03689232090277778,
+          "ci": [
+            0.024807802933398005,
+            0.05076122268618443
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "actor_model": "deepseek-v4-pro",
+  "questions": 32,
+  "constant_effect_baseline": 0.0625,
+  "forecast_statuses": {
+    "ok": 31,
+    "invalid_output": 1
+  },
+  "metrics": {
+    "effect": {
+      "mean": 0.0390625,
+      "stratified_question_bootstrap95": [
+        -0.0078125,
+        0.09375
+      ]
+    },
+    "squared_effect": {
+      "mean": 0.005208333333333331,
+      "stratified_question_bootstrap95": [
+        -0.007812500000000003,
+        0.020833333333333332
+      ]
+    },
+    "corrected_effect_MSE": {
+      "mean": 0.07568352864583333,
+      "stratified_question_bootstrap95": [
+        0.035562543945312504,
+        0.12340298177083331
+      ]
+    },
+    "excess_risk_vs_constant": {
+      "mean": 0.0714517578125,
+      "stratified_question_bootstrap95": [
+        0.027520346679687505,
+        0.12387636718749996
+      ]
+    },
+    "shared_assignment_risk_lower": {
+      "mean": 0.0714517578125,
+      "stratified_question_bootstrap95": [
+        0.027520346679687505,
+        0.12387636718749996
+      ]
+    },
+    "shared_assignment_risk_upper": {
+      "mean": 0.0714517578125,
+      "stratified_question_bootstrap95": [
+        0.027520346679687505,
+        0.12387636718749996
+      ]
+    },
+    "route_gain_vs_reuse": {
+      "mean": 0.0390625,
+      "stratified_question_bootstrap95": [
+        -0.0078125,
+        0.09375
+      ]
+    },
+    "Brier_reuse": {
+      "mean": 0.2114734893798828,
+      "stratified_question_bootstrap95": [
+        0.1275228643798828,
+        0.30181834465026847
+      ]
+    },
+    "Brier_difference_vs_prior_reuse": {
+      "mean": -0.02503774108886719,
+      "stratified_question_bootstrap95": [
+        -0.11632321166992185,
+        0.06887649223327634
+      ]
+    },
+    "Brier_new": {
+      "mean": 0.1546577178955078,
+      "stratified_question_bootstrap95": [
+        0.0997143335723877,
+        0.22129794052124024
+      ]
+    },
+    "Brier_difference_vs_prior_new": {
+      "mean": -0.0724540985107422,
+      "stratified_question_bootstrap95": [
+        -0.12207771720886229,
+        -0.021255343627929732
+      ]
+    }
+  },
+  "interpretation": "Forecasts must be fixed independently of evaluation outcomes. Unresolved rewards usezero forpoint estimates andshared case assignments forriskbounds. Negative finite-sample moment estimates remainunclipped. Saved-branch routing excludes predictor overhead anddoesnot establishdeploymentbenefit."
+}

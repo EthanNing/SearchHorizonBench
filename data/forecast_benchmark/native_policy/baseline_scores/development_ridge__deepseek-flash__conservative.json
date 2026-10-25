@@ -1,0 +1,60 @@
+{
+  "actor_model": "deepseek-flash",
+  "questions": 192,
+  "constant_effect_baseline": 0.0625,
+  "forecast_statuses": {
+    "ok": 192
+  },
+  "metrics": {
+    "effect": {
+      "mean": 0.0234375,
+      "stratified_question_bootstrap95": [
+        -0.006510416666666667,
+        0.053385416666666664
+      ]
+    },
+    "squared_effect": {
+      "mean": 0.03146701388888889,
+      "stratified_question_bootstrap95": [
+        0.011284722222222222,
+        0.05512152777777777
+      ]
+    },
+    "corrected_effect_MSE": {
+      "mean": 0.03243030625587589,
+      "stratified_question_bootstrap95": [
+        0.012957211254681572,
+        0.054932798179421594
+      ]
+    },
+    "excess_risk_vs_constant": {
+      "mean": -1.3270133012998668e-05,
+      "stratified_question_bootstrap95": [
+        -3.121821376739451e-05,
+        4.913741145915299e-06
+      ]
+    },
+    "shared_assignment_risk_lower": {
+      "mean": -4.650090807222486e-05,
+      "stratified_question_bootstrap95": [
+        -7.130808469769961e-05,
+        -2.2921731569715644e-05
+      ]
+    },
+    "shared_assignment_risk_upper": {
+      "mean": 3.204679668457596e-05,
+      "stratified_question_bootstrap95": [
+        8.068058915454077e-06,
+        5.860555297340655e-05
+      ]
+    },
+    "route_gain_vs_reuse": {
+      "mean": 0.0234375,
+      "stratified_question_bootstrap95": [
+        -0.006510416666666667,
+        0.053385416666666664
+      ]
+    }
+  },
+  "interpretation": "Forecasts must be fixed independently of evaluation outcomes. Unresolved rewards usezero forpoint estimates andshared case assignments forriskbounds. Negative finite-sample moment estimates remainunclipped. Saved-branch routing excludes predictor overhead anddoesnot establishdeploymentbenefit."
+}

@@ -1,0 +1,391 @@
+{
+  "created_utc": "2026-10-16T06:33:52.193332+00:00",
+  "training_questions": 224,
+  "training_task_ids": [
+    "hotpot_5a88016b5542997e5c09a58a",
+    "hotpot_5ae1e6d95542997283cd22c3",
+    "hotpot_5adc0e0355429944faac2404",
+    "hotpot_5a834ed95542990548d0b1ca",
+    "hotpot_5ae1e4095542997283cd22bf",
+    "hotpot_5ac0c5805542992a796ded80",
+    "hotpot_5a8ba60b554299240d9c205b",
+    "hotpot_5a7f84225542994857a76756",
+    "hotpot_5a86265f55429960ec39b625",
+    "hotpot_5adea8cf55429939a52fe92d",
+    "hotpot_5a7c9ead5542990527d554e4",
+    "hotpot_5ae30aa05542992decbdcdd7",
+    "hotpot_5ab4107a554299753aec5a2f",
+    "hotpot_5a8e3e9b5542995085b37402",
+    "hotpot_5a8f73455542997ba9cb3269",
+    "hotpot_5ab82dbb5542990e739ec857",
+    "hotpot_5a7e02b75542997cc2c474f3",
+    "hotpot_5add311b5542994ed6169cc5",
+    "hotpot_5a8f0986554299458435d535",
+    "hotpot_5abe86365542993f32c2a14d",
+    "hotpot_5ae195bf5542997b2ef7d207",
+    "hotpot_5a7bb983554299042af8f7c1",
+    "hotpot_5adfcb5455429906c02daa48",
+    "hotpot_5adccdd55542992c1e3a2408",
+    "hotpot_5a77afcd5542997042120adf",
+    "hotpot_5abea98d5542990832d3a07d",
+    "hotpot_5a8e60ca5542995a26add4d9",
+    "hotpot_5ac11037554299294b21907a",
+    "hotpot_5abff65c5542994516f45551",
+    "hotpot_5a77c09555429967ab105262",
+    "hotpot_5adea19a55429939a52fe919",
+    "hotpot_5adf4a275542993a75d26498",
+    "hotpot_5abc5955554299114383a118",
+    "hotpot_5a7bbc59554299294a54aaa9",
+    "hotpot_5ab428915542991751b4d6b2",
+    "hotpot_5ae471fa55429970de88d965",
+    "hotpot_5ab5ee055542997d4ad1f259",
+    "hotpot_5a8ed30655429917b4a5bdcd",
+    "hotpot_5ae2fffe55429928c423959c",
+    "hotpot_5ab8284d5542990e739ec83f",
+    "hotpot_5ae5e762554299546bf82faf",
+    "hotpot_5ade0fbb5542995b365fabfb",
+    "hotpot_5adfbd4655429942ec259b31",
+    "hotpot_5a887898554299206df2b2a2",
+    "hotpot_5a77691455429966f1a36d2b",
+    "hotpot_5ae5eb0d554299546bf82fd2",
+    "hotpot_5a80956e5542996402f6a579",
+    "hotpot_5ae14def55429901ffe4ae4a",
+    "hotpot_5aba7cfe554299232ef4a2fd",
+    "hotpot_5a728dc65542992359bc30ef",
+    "hotpot_5a7da6015542995f4f40229d",
+    "hotpot_5ae68fcb5542992ae0d1635b",
+    "hotpot_5a904f6355429916514e746e",
+    "hotpot_5a8df1a65542995085b3735f",
+    "hotpot_5ae3fd2c5542995dadf2428f",
+    "hotpot_5abe87cb5542993f32c2a156",
+    "hotpot_5abd81ff5542993062266cb3",
+    "hotpot_5ab8848d55429916710eb07b",
+    "hotpot_5a84524a554299123d8c2203",
+    "hotpot_5a8ae61955429970aeb70326",
+    "hotpot_5a7b241b554299042af8f705",
+    "hotpot_5ade56ed5542997c77adee04",
+    "hotpot_5aba9e2455429939ce03dd3a",
+    "hotpot_5a8d841955429941ae14dfe6",
+    "hotpot_5adf65555542992d7e9f9334",
+    "hotpot_5ab8ed305542991b5579f046",
+    "hotpot_5ab3bacc55429969a97a8197",
+    "hotpot_5a78bd9b554299078472774a",
+    "hotpot_5ae1c214554299234fd042ed",
+    "hotpot_5ab43b755542991779162c21",
+    "hotpot_5ab8494d55429916710eb016",
+    "hotpot_5a8481ba5542997175ce1ed4",
+    "hotpot_5ade02d05542997545bbbe0d",
+    "hotpot_5a7735f55542994aec3b7226",
+    "hotpot_5a72125055429971e9dc9241",
+    "hotpot_5ae618535542995703ce8af7",
+    "hotpot_5ae268f35542994d89d5b416",
+    "hotpot_5a7313865542994cef4bc442",
+    "hotpot_5a74d9c555429929fddd84fb",
+    "hotpot_5a735e9155429901807db00d",
+    "hotpot_5ab514dc5542990594ba9cfa",
+    "hotpot_5abe03635542991f661060a5",
+    "hotpot_5ac4e03f5542995c82c4ad75",
+    "hotpot_5ae67fad5542991bbc976100",
+    "hotpot_5a8cec13554299441c6b9f7d",
+    "hotpot_5ae3e1e95542994393b9e78b",
+    "hotpot_5a7f354b5542992e7d278c8c",
+    "hotpot_5a790d8f554299029c4b5eec",
+    "hotpot_5ab259b25542993be8fa98de",
+    "hotpot_5a76364d5542994ccc918719",
+    "hotpot_5a710a1e5542994082a3e4fd",
+    "hotpot_5ab5df4c5542997d4ad1f218",
+    "hotpot_5ae7376f5542992ae0d163d2",
+    "hotpot_5abe2b0155429976d4830a83",
+    "hotpot_5a73984355429908901be307",
+    "hotpot_5ae0ee2c5542993d6555eca3",
+    "hotpot_5ac1c7605542994ab5c67e14",
+    "hotpot_5a8072a5554299485f5985f1",
+    "hotpot_5ae705725542995703ce8bbc",
+    "hotpot_5adfed45554299603e4183c5",
+    "hotpot_5a8622ae554299211dda2a7e",
+    "hotpot_5adfad2b554299603e41835c",
+    "hotpot_5ae23d945542996483e64939",
+    "hotpot_5adf39ce5542995534e8c76d",
+    "hotpot_5a7ae2f2554299042af8f6aa",
+    "hotpot_5a7bb52355429927d897c01a",
+    "hotpot_5ab3849a55429969a97a8170",
+    "hotpot_5a722fae55429971e9dc9343",
+    "hotpot_5a83d0ed5542996488c2e4e7",
+    "hotpot_5a73aeb855429908901be311",
+    "hotpot_5ab624b855429953192ad26d",
+    "hotpot_5ac3b8b8554299741d48a301",
+    "hotpot_5ae4a2e25542996836b02cee",
+    "hotpot_5ab7f1b65542991d322237d3",
+    "hotpot_5ac1c18855429964131be279",
+    "hotpot_5ab96ecb5542996be20204e6",
+    "hotpot_5ae351405542994393b9e67f",
+    "hotpot_5abdd8d95542991f6610606a",
+    "hotpot_5ab2be12554299295394686b",
+    "hotpot_5a84b6e15542991dd0999daa",
+    "hotpot_5ae1b1aa5542997283cd223f",
+    "hotpot_5ae684fe5542991bbc97610e",
+    "hotpot_5adcb7eb5542994ed6169bd0",
+    "hotpot_5a7c646e55429907fabeef7c",
+    "hotpot_5a7a6ee75542996c55b2ddac",
+    "hotpot_5ab692b5554299710c8d1ed6",
+    "hotpot_5a81711455429938b614233e",
+    "hotpot_5ae515bb55429913cc204584",
+    "hotpot_5adc411f5542994650320cbc",
+    "hotpot_5a7a567255429941d65f25bd",
+    "hotpot_5a8b8f5b55429949d91db5e1",
+    "hotpot_5ab85e9e55429934fafe6d8b",
+    "hotpot_5a7cc5f9554299452d57ba49",
+    "hotpot_5ac507725542994611c8b32a",
+    "hotpot_5a7c75045542990527d554b2",
+    "hotpot_5a8a17685542993b751ca9f3",
+    "hotpot_5ac2a23a55429967731025cc",
+    "hotpot_5adf734b5542995ec70e9016",
+    "hotpot_5a78f05155429970f5fffde3",
+    "hotpot_5abf931f5542990832d3a158",
+    "hotpot_5a731a635542994cef4bc458",
+    "hotpot_5ae26cb15542994d89d5b421",
+    "hotpot_5a846c005542990548d0b2b3",
+    "hotpot_5a79b495554299148911fa3b",
+    "hotpot_5ab9b29c554299743d22ebae",
+    "hotpot_5ac00f795542996f0d89cb16",
+    "hotpot_5ae7793c554299540e5a55c2",
+    "hotpot_5a88a4245542997e5c09a668",
+    "hotpot_5adfecf0554299603e4183c3",
+    "hotpot_5a89810655429946c8d6e929",
+    "hotpot_5ae201465542997f29b3c1f7",
+    "hotpot_5a78e9a2554299148911f995",
+    "hotpot_5ab44ab25542991779162c58",
+    "hotpot_5a7c988755429935c91b524d",
+    "hotpot_5ac12275554299012d1db6a3",
+    "hotpot_5ae2c8b05542992decbdcd9d",
+    "hotpot_5a89e92c5542993b751ca9af",
+    "hotpot_5abda6b255429965af743d9a",
+    "hotpot_5ae2d59755429928c42394ec",
+    "hotpot_5a7a83b3554299042af8f652",
+    "hotpot_5a8bcad45542995e66a47512",
+    "hotpot_5a8c781c554299653c1aa083",
+    "hotpot_5a801f215542992bc0c4a6b2",
+    "hotpot_5ab3abe9554299753aec597e",
+    "hotpot_5a7c47c35542990527d55481",
+    "hotpot_5abc715f5542993a06baf8ea",
+    "hotpot_5a9068f85542990a98493623",
+    "hotpot_5a7e72dd55429949594199bf",
+    "hotpot_5a74d7685542996c70cfae0a",
+    "hotpot_5abdf8c45542993f32c2a072",
+    "hotpot_5abcf5ec55429959677d6b76",
+    "hotpot_5abc0e095542996583600417",
+    "hotpot_5a7dacff5542991319bc93e0",
+    "hotpot_5a857cf35542994c784ddb1d",
+    "hotpot_5ab2c6d955429916697740c3",
+    "hotpot_5ae780a55542997b22f6a79f",
+    "hotpot_5ab6c5be55429954757d336c",
+    "hotpot_5a7c6b86554299683c1c62ff",
+    "hotpot_5adc6eb65542994650320cf3",
+    "hotpot_5a886364554299206df2b24b",
+    "hotpot_5a8a09765542992d82986e67",
+    "hotpot_5abc0aba55429959677d6a00",
+    "hotpot_5add7ce55542992ae4cec585",
+    "hotpot_5a85a8655542997b5ce40011",
+    "hotpot_5ab2d65e554299545a2cfabe",
+    "hotpot_5ae4db9c55429908b6326492",
+    "hotpot_5adf73a45542992d7e9f9378",
+    "hotpot_5abce73055429959677d6b34",
+    "hotpot_5ac160605542994ab5c67d02",
+    "hotpot_5a8eb63455429917b4a5bdb7",
+    "hotpot_5ac1c4e85542994ab5c67e0c",
+    "hotpot_5ac2943a55429921a00aafce",
+    "hotpot_5ab6b59f5542995eadef0065",
+    "hotpot_5ac19b2c55429963665198b6",
+    "hotpot_5ae2c509554299492dc91c68",
+    "hotpot_5a8a1dbc55429970aeb7025a",
+    "hotpot_5a825a9d55429940e5e1a870",
+    "hotpot_5a82fcbd55429954d2e2ebe8",
+    "hotpot_5abde0655542991f6610608b",
+    "hotpot_5a74b4dc55429979e2882a00",
+    "hotpot_5a7c34905542996dd594b8d5",
+    "hotpot_5a81b99c5542995ce29dcc56",
+    "hotpot_5a7b48b15542995eb53be8eb",
+    "hotpot_5ac3b62b554299741d48a2f6",
+    "hotpot_5ab482815542990594ba9c3d",
+    "hotpot_5ae2661d554299495565da60",
+    "hotpot_5ac559bd5542993e66e82328",
+    "hotpot_5a8838885542994846c1ce39",
+    "hotpot_5a7224ab55429971e9dc92dd",
+    "hotpot_5a8ac4dd5542992d82986f76",
+    "hotpot_5ac3b0885542995ef918c1f8",
+    "hotpot_5ae28c0a554299495565daaa",
+    "hotpot_5a88cf7e5542993b751ca85b",
+    "hotpot_5abcf9d155429959677d6b90",
+    "hotpot_5ac027005542996f0d89cb3d",
+    "hotpot_5ae4d3a55542990ba0bbb164",
+    "hotpot_5abffc0d5542990832d3a1e2",
+    "hotpot_5ade8bd955429975fa854f04",
+    "hotpot_5a7148d25542994082a3e766",
+    "hotpot_5a85f8665542994775f606ce",
+    "hotpot_5a8463945542992ef85e23d9",
+    "hotpot_5ab1e97f554299340b525427",
+    "hotpot_5a89f5815542993b751ca9c5",
+    "hotpot_5a8314bd55429966c78a6b2a"
+  ],
+  "fits": {
+    "Flash_probability": {
+      "constant": {
+        "probabilities": [
+          0.7209821428571429,
+          0.7421875
+        ]
+      },
+      "probability_offset": {
+        "offset": [
+          0.16247767857142864,
+          0.10977678571428577
+        ]
+      },
+      "effect_offset": {
+        "offset": -0.052700892857142856
+      },
+      "probability_affine": {
+        "center": [
+          0.5585044642857144,
+          0.6324107142857144
+        ],
+        "scale": [
+          0.39092081082645486,
+          0.33351548886637267
+        ],
+        "intercept": [
+          0.7209821428571429,
+          0.7421875
+        ],
+        "beta": [
+          [
+            -0.0034782304623200188,
+            0.036150360952735446
+          ],
+          [
+            0.2363710256102131,
+            0.19469355092466528
+          ]
+        ],
+        "penalty": 0.01,
+        "CV_loss": 0.12222172790410776
+      },
+      "effect_affine": {
+        "center": [
+          0.07390624999999999
+        ],
+        "scale": [
+          0.14528846047312838
+        ],
+        "intercept": 0.021205357142857144,
+        "beta": [
+          -0.00014939268991817677
+        ],
+        "penalty": 100.0,
+        "CV_loss": 0.04457444575943969
+      },
+      "effect_ridge": {
+        "center": [
+          0.5585044642857144,
+          0.6324107142857144
+        ],
+        "scale": [
+          0.39092081082645486,
+          0.33351548886637267
+        ],
+        "intercept": 0.021205357142857144,
+        "beta": [
+          1.2300897203447772e-05,
+          -5.132985524007425e-05
+        ],
+        "penalty": 100.0,
+        "CV_loss": 0.04457720474547829
+      }
+    },
+    "Pro_probability": {
+      "constant": {
+        "probabilities": [
+          0.7209821428571429,
+          0.7421875
+        ]
+      },
+      "probability_offset": {
+        "offset": [
+          0.16419642857142863,
+          0.020357142857142897
+        ]
+      },
+      "effect_offset": {
+        "offset": -0.1438392857142857
+      },
+      "probability_affine": {
+        "center": [
+          0.5567857142857146,
+          0.7218303571428569
+        ],
+        "scale": [
+          0.3290156159063033,
+          0.2155945843307052
+        ],
+        "intercept": [
+          0.7209821428571429,
+          0.7421875
+        ],
+        "beta": [
+          [
+            0.11195059004714664,
+            0.1312596834000658
+          ],
+          [
+            0.07855046542035785,
+            0.04980403500324285
+          ]
+        ],
+        "penalty": 0.1,
+        "CV_loss": 0.14124016669997072
+      },
+      "effect_affine": {
+        "center": [
+          0.16504464285714285
+        ],
+        "scale": [
+          0.21582275666094528
+        ],
+        "intercept": 0.021205357142857144,
+        "beta": [
+          -0.007927119570797798
+        ],
+        "penalty": 1.0,
+        "CV_loss": 0.04444981737581043
+      },
+      "effect_ridge": {
+        "center": [
+          0.5567857142857146,
+          0.7218303571428569
+        ],
+        "scale": [
+          0.3290156159063033,
+          0.2155945843307052
+        ],
+        "intercept": 0.021205357142857144,
+        "beta": [
+          0.019309093352918884,
+          -0.02874643041711474
+        ],
+        "penalty": 0.1,
+        "CV_loss": 0.044243332363496264
+      }
+    }
+  },
+  "primary_method": "probability_affine",
+  "methods": [
+    "raw",
+    "constant",
+    "probability_offset",
+    "probability_affine",
+    "effect_offset",
+    "effect_affine",
+    "effect_ridge"
+  ],
+  "actor_application": "Fit on old Flash-actor states; apply unchanged to Flash and Pro actor frames. Pro is a secondary same-family actor shift."
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SearchHorizonBench · A Benchmark for Search Value in AI Agents</title>
+  <meta name="description" content="A benchmark for learning search value from agent execution experience. Evaluate outcome prediction, marginal search gains, and cost-aware decisions across 45,632 executions and 3,168 questions.">
+  <link rel="canonical" href="https://ethanning.github.io/SearchHorizonBench/">
+  <meta name="citation_title" content="SearchHorizonBench: A Benchmark for Search Value in AI Agents">
+  <meta name="citation_author" content="Jingjie Ning">
+  <meta name="citation_author" content="Xueqi Li">
+  <meta name="citation_author" content="Yibo Kong">
+  <meta name="citation_author_institution" content="Carnegie Mellon University">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://ethanning.github.io/SearchHorizonBench/assets/SearchHorizonBench.pdf">
+  <meta property="og:url" content="https://ethanning.github.io/SearchHorizonBench/">
+  <meta property="og:image" content="https://ethanning.github.io/SearchHorizonBench/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SearchHorizonBench · A Benchmark for Search Value in AI Agents">
+  <meta name="twitter:description" content="What is one more search worth? Measure success, search gains, and cost-aware decisions from 45,632 agent executions.">
+  <meta name="twitter:image" content="https://ethanning.github.io/SearchHorizonBench/assets/social-preview.png">
+  <meta name="theme-color" content="#263747">
+  <meta property="og:title" content="SearchHorizonBench · What is one more search worth?">
+  <meta property="og:description" content="Measure search value from execution experience. 45,632 executions. Three complementary evaluation targets. One reusable benchmark.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"SearchHorizonBench: A Benchmark for Search Value in AI Agents","url":"https://ethanning.github.io/SearchHorizonBench/","description":"A paired-execution benchmark for evaluating action-success prediction, marginal search-value prediction, and cost-aware decisions.","author":[{"@type":"Person","name":"Jingjie Ning","email":"jening@cs.cmu.edu","affiliation":{"@type":"CollegeOrUniversity","name":"Carnegie Mellon University"}},{"@type":"Person","name":"Xueqi Li","email":"xueqil@cs.cmu.edu","affiliation":{"@type":"CollegeOrUniversity","name":"Carnegie Mellon University"}},{"@type":"Person","name":"Yibo Kong","email":"yibok@cs.cmu.edu","affiliation":{"@type":"CollegeOrUniversity","name":"Carnegie Mellon University"}}],"encoding":{"@type":"MediaObject","encodingFormat":"application/pdf","contentUrl":"https://ethanning.github.io/SearchHorizonBench/assets/SearchHorizonBench.pdf"},"keywords":["AI agents","benchmark","agentic search","search value","retrieval-augmented generation","calibration","value of information"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <div class="nav-shell">
+    <a class="brand" href="#" aria-label="SearchHorizonBench home"><img src="assets/mark.svg" width="33" height="33" alt=""><span>SearchHorizon<span class="brand-light">Bench</span></span></a>
+    <nav aria-label="Main navigation"><a href="#benchmark">Benchmark</a><a href="#findings">Findings</a><a href="#explore">Explore</a><a href="#start">Resources</a></nav>
+    <a class="nav-paper" href="assets/SearchHorizonBench.pdf">Read the paper <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> A BENCHMARK FOR SEARCH VALUE IN AI AGENTS</p>
+      <h1>What is<br><span>one more search</span><br>worth?</h1>
+      <p class="hero-lead">Turn execution experience into a sharper test of when an AI agent should search.</p>
+      <p class="hero-description">Measure answer success, the gain from further search, and the value of the final decision.</p>
+      <div class="actions"><a class="button primary" href="#explore">Explore the evidence <span aria-hidden="true">↘</span></a><a class="button secondary" href="downloads/SearchHorizonBench.zip" download>Get the benchmark <span aria-hidden="true">↓</span></a></div>
+      <div class="affiliation"><span class="affiliation-line"></span><span>Carnegie Mellon University<br><b>School of Computer Science</b></span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-heading"><span>ONE QUESTION. TWO CONTINUATIONS.</span><span class="small-pill">Recorded example</span></div>
+      <svg class="branch-visual" viewBox="0 0 560 430" role="img" aria-labelledby="branch-title branch-desc">
+        <title id="branch-title">A paired search-value evaluation</title><desc id="branch-desc">The same question forks into answering from existing evidence or searching further. One of four THINK executions and all four SEARCH executions answer correctly in this selected example.</desc>
+        <defs><marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#8D9FCD"/></marker><marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#62BE9F"/></marker><pattern id="dot-field" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#DBE1EC"/></pattern></defs>
+        <rect x="0" y="0" width="560" height="430" fill="url(#dot-field)"/>
+        <rect x="95" y="20" width="370" height="79" rx="15" fill="white" stroke="#DBE1EC"/>
+        <g fill="none" stroke="#617790" stroke-width="1.8" stroke-linecap="round"><rect x="119" y="40" width="22" height="29" rx="3"/><path d="M125 48h10M125 54h10M125 60h6"/></g>
+        <text x="157" y="46" class="svg-kicker">SAVED QUESTION + HISTORY</text>
+        <text x="157" y="69" class="svg-question">Leonard Nathan's birthplace</text><text x="157" y="87" class="svg-question">is in what county?</text>
+        <path d="M280 99C280 136 136 118 136 166" stroke="#8D9FCD" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+        <path d="M280 99C280 136 425 118 425 166" stroke="#62BE9F" stroke-width="2.5" fill="none" marker-end="url(#arrow-green)"/>
+        <g class="branch-node"><rect x="28" y="171" width="217" height="132" rx="16" fill="#F2F4F9" stroke="#DBE1EC"/><circle cx="61" cy="204" r="15" fill="white"/><path d="M54 205c0-11 14-11 14-1 0 4-3 4-3 7h-8c0-3-3-4-3-6Zm4 10h6" fill="none" stroke="#617790" stroke-width="1.6"/><text x="88" y="202" class="svg-node-title">THINK</text><text x="88" y="221" class="svg-note">Use existing evidence</text><circle cx="64" cy="260" r="7" fill="#8D9FCD"/><circle cx="90" cy="260" r="7" fill="white" stroke="#B8C3D9" stroke-width="1.4"/><circle cx="116" cy="260" r="7" fill="white" stroke="#B8C3D9" stroke-width="1.4"/><circle cx="142" cy="260" r="7" fill="white" stroke="#B8C3D9" stroke-width="1.4"/><text x="166" y="265" class="svg-result">1 / 4</text><text x="62" y="285" class="svg-note">Correct continuations</text></g>
+        <g class="branch-node"><rect x="315" y="171" width="217" height="132" rx="16" fill="#EDF7F3" stroke="#C4E6D9"/><circle cx="348" cy="204" r="15" fill="white"/><circle cx="346" cy="202" r="5" fill="none" stroke="#2A8067" stroke-width="1.7"/><path d="m350 206 5 5" stroke="#2A8067" stroke-width="1.7" stroke-linecap="round"/><text x="375" y="202" class="svg-node-title">SEARCH</text><text x="375" y="221" class="svg-note">Retrieve more evidence</text><g fill="#62BE9F"><circle cx="351" cy="260" r="7"/><circle cx="377" cy="260" r="7"/><circle cx="403" cy="260" r="7"/><circle cx="429" cy="260" r="7"/></g><text x="453" y="265" class="svg-result">4 / 4</text><text x="348" y="285" class="svg-note">Correct continuations</text></g>
+        <path d="M136 303C136 343 263 321 280 355" stroke="#8D9FCD" stroke-width="2" fill="none"/><path d="M424 303C424 343 297 321 280 355" stroke="#62BE9F" stroke-width="2" fill="none"/>
+        <circle cx="280" cy="359" r="5" fill="#263747"/><text x="280" y="388" text-anchor="middle" class="svg-node-title">Measure the difference</text><text x="280" y="410" text-anchor="middle" class="svg-note">Repeated outcomes · shared starting point</text>
+      </svg>
+      <div class="visual-footer"><span><i class="legend-dot blue"></i><i class="legend-dot green"></i>Filled dots mark correct answers</span><span>One selected illustration</span></div>
+    </div>
+  </section>
+  <section class="numbers wrap" aria-label="Benchmark scale"><div><strong>45,632</strong><span>agent executions</span></div><div><strong>8,880</strong><span>value forecasts</span></div><div><strong>3,168</strong><span>distinct questions</span></div><div><strong>3</strong><span>evaluation targets</span></div></section>
+
+  <section id="benchmark" class="section wrap">
+    <div class="section-top"><p class="eyebrow">01 / THE BENCHMARK</p><span class="section-aside">Shared histories. Repeated outcomes. Explicit costs.</span></div>
+    <div class="section-heading"><h2>Three questions.<br>One complete evaluation.</h2><p>A useful search decision starts with knowing what the next action will change. SearchHorizonBench follows that information from prediction to decision.</p></div>
+    <div class="measurements">
+      <article class="measurement"><span class="measure-number">01</span><svg viewBox="0 0 240 90" aria-hidden="true"><path d="M18 68H224" stroke="#DBE1EC"/><path d="M18 68C70 62 95 56 118 39S180 20 218 13" stroke="#8D9FCD" stroke-width="3" fill="none"/><path d="M18 73C78 66 100 51 126 31S188 13 218 8" stroke="#62BE9F" stroke-width="3" fill="none"/><circle cx="126" cy="31" r="5" fill="#62BE9F"/><circle cx="118" cy="39" r="5" fill="#8D9FCD"/></svg><h3>Predict success</h3><p>How likely is each continuation to produce a correct answer?</p><span class="measure-output">Action probabilities · Brier error</span></article>
+      <article class="measurement"><span class="measure-number">02</span><svg viewBox="0 0 240 90" aria-hidden="true"><path d="M18 47H224" stroke="#DBE1EC" stroke-dasharray="3 4"/><path d="M20 62C51 81 68 23 96 43S138 77 161 37 191 13 221 32" stroke="#62BE9F" stroke-width="3" fill="none"/><path d="M80 47V69M80 47v-24" stroke="#8D9FCD" stroke-width="2"/><circle cx="80" cy="38" r="5" fill="#8D9FCD"/><circle cx="162" cy="36" r="5" fill="#62BE9F"/></svg><h3>Estimate the gain</h3><p>How much does another search improve expected answer quality?</p><span class="measure-output">Search-value error · Gain R²</span></article>
+      <article class="measurement"><span class="measure-number">03</span><svg viewBox="0 0 240 90" aria-hidden="true"><path d="M120 12V69M88 76h64M66 23h109" fill="none" stroke="#617790" stroke-width="2" stroke-linecap="round"/><path d="M67 23 43 58H91ZM175 23l-24 35h48Z" fill="none" stroke="#8D9FCD" stroke-width="2"/><path d="M43 58Q67 77 91 58" fill="#DBE1EC"/><path d="M151 58Q175 77 199 58" fill="#D0EEE4"/><circle cx="175" cy="47" r="7" fill="#62BE9F"/></svg><h3>Choose a continuation</h3><p>Does the expected gain justify the cost of obtaining more information?</p><span class="measure-output">Reward minus cost · Decision utility</span></article>
+    </div>
+    <details class="overview"><summary>See the complete benchmark overview <span aria-hidden="true">＋</span></summary><a href="assets/searchhorizon_teaser.svg"><img src="assets/searchhorizon_teaser.svg" loading="lazy" alt="The benchmark's full paired-execution, value-estimation and decision-evaluation pipeline."></a></details>
+  </section>
+
+  <section id="findings" class="findings-section"><div class="wrap">
+    <div class="section-top"><p class="eyebrow">02 / THE CENTRAL FINDING</p><span class="section-aside">Success prediction and search-value prediction carry different information</span></div>
+    <div class="section-heading"><h2>Calibrated confidence.<br>A separate test of value.</h2><p>Execution history improves forecasts of answer success. Paired evaluation reveals how much of that improvement reaches the estimated benefit of searching.</p></div>
+    <div class="finding-main">
+      <div class="brier-panel"><div class="panel-kicker">ANSWER-SUCCESS PREDICTION</div><h3>16.2% lower Brier error</h3><p>Historical correction compared with global action means on Test-1632.</p><div class="brier-row"><span>Global action means</span><div class="bar-track"><i style="width:95%"></i></div><b>0.2145</b></div><div class="brier-row accent"><span>Historical correction</span><div class="bar-track"><i style="width:79.59%"></i></div><b>0.1797</b></div><div class="attribution"><strong>99.9%</strong><span>of this Brier improvement comes from success-level prediction.</span></div></div>
+      <div class="gain-panel"><div class="panel-kicker">MARGINAL SEARCH VALUE</div><div class="gain-stat"><strong>21.4<span>pp</span></strong><div>standard deviation of<br>expected search gains</div></div><svg viewBox="0 0 420 100" class="gain-curve" role="img" aria-label="Schematic of varying gains across questions"><path d="M10 56H410" stroke="#DBE1EC" stroke-dasharray="4 5"/><path d="M15 68C39 75 58 19 81 35S119 92 146 59 184 11 212 30 244 82 269 61 304 27 328 42 370 70 405 23" stroke="#62BE9F" stroke-width="3" fill="none"/><g fill="#263747"><circle cx="81" cy="35" r="4"/><circle cx="146" cy="59" r="4"/><circle cx="212" cy="30" r="4"/><circle cx="328" cy="42" r="4"/></g></svg><p class="schematic-note">Schematic of question-specific variation</p><p class="gain-takeaway">Tested historical estimators explain less than 2% of gain variance in point estimates.</p></div>
+    </div>
+    <div class="finding-note"><span class="note-number">88.9%</span><p>of the observed Brier improvement is recovered by simple task-category priors. The benchmark measures task difficulty and additional search value separately.</p><a href="assets/SearchHorizonBench.pdf">Read the analysis <span aria-hidden="true">↗</span></a></div>
+    <details class="overview"><summary>Inspect within-task evidence and uncertainty <span aria-hidden="true">＋</span></summary><a href="assets/success_structure.svg"><img src="assets/success_structure.svg" loading="lazy" alt="Within-task Brier differences and confidence intervals across five question strata."></a></details>
+  </div></section>
+
+  <section id="explore" class="section wrap">
+    <div class="section-top"><p class="eyebrow">03 / EXPLORE THE DECISION</p><span class="section-aside">Interactive · Recorded measurements</span></div>
+    <div class="section-heading"><h2>Put a price<br>on the next search.</h2><p>Hold one kind of information fixed and vary the other. See how knowledge of search gains and token costs changes decision utility.</p></div>
+    <div class="explorer">
+      <div class="price-controls"><span class="panel-kicker">TOKEN VALUATION λ</span><h3>Value each 1,000 tokens.</h3><p>Utility equals answer correctness minus λ times thousands of tokens.</p><div class="price-buttons" role="group" aria-label="Token valuation"><button type="button" data-price="0.0" aria-pressed="false">0</button><button type="button" data-price="0.001" aria-pressed="false">0.001</button><button type="button" data-price="0.005" aria-pressed="true">0.005</button><button type="button" data-price="0.01" aria-pressed="false">0.01</button><button type="button" data-price="0.02" aria-pressed="false">0.02</button></div><div class="price-example"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span id="price-description">At 0.005, each 1,000 tokens costs 0.5 utility percentage points.</span></div><div class="constant-tag"><span>BEST CONSTANT ACTION</span><strong id="best-constant">SEARCH</strong></div></div>
+      <div class="decision-chart"><div class="chart-heading"><div><span class="panel-kicker">UTILITY ABOVE THE BEST CONSTANT</span><h3>What does the decision know?</h3></div><span class="ci-label">95% intervals</span></div><svg id="decision-plot" viewBox="0 0 650 240" role="img" aria-label="Comparison of gain information, cost information, and both types of information"></svg><div class="decision-result" aria-live="polite"><strong id="decision-value">+2.49<span>pp</span></strong><p>with question-specific<br>gain and cost information</p></div></div>
+    </div>
+    <p class="section-footnote"><b>Information-value diagnostic.</b> Each rule uses two outcome draws per action for selection and two disjoint draws for evaluation. Selection observations are free. These values quantify a sample-informed opportunity; deployable methods are separately charged for acquiring their signals. All 36 splits use Test-1632 and reference-equivalent correctness. <a href="assets/results.json">View the measurements ↗</a></p>
+  </section>
+
+  <section class="scope-section"><div class="wrap">
+    <div class="section-top"><p class="eyebrow">04 / THE EXECUTION RESOURCE</p><span class="section-aside">Common metrics across multiple settings</span></div>
+    <div class="section-heading"><h2>One evaluation language.<br>Many search settings.</h2><p>Saved executions connect model families, retrieval services, budget choices and answer rewards through the same success, gain and decision measurements.</p></div>
+    <div class="scope-matrix"><div><span class="scope-label">ACTORS & FORECASTERS</span><p>DeepSeek Flash <span>·</span> Pro <span>·</span> Qwen</p></div><div><span class="scope-label">RETRIEVAL</span><p>DeepSeek <span>·</span> Serper <span>·</span> Tavily</p></div><div><span class="scope-label">INDEXED WEB CORPORA</span><p>ClueWeb22 <span>·</span> FineWeb</p></div><div><span class="scope-label">TASKS & REWARDS</span><p>Multi-hop QA <span>·</span> Natural Questions <span>·</span> Set completion</p></div></div>
+    <details class="overview"><summary>View the execution inventory <span aria-hidden="true">＋</span></summary><a href="assets/resource_atlas.svg"><img src="assets/resource_atlas.svg" loading="lazy" alt="The nine experimental settings contributing 45,632 unique executions, with source and target outcome summaries."></a></details>
+  </div></section>
+
+  <section id="start" class="section wrap">
+    <div class="section-top"><p class="eyebrow">05 / GET STARTED</p><span class="section-aside">Bring a predictor. Measure its value.</span></div>
+    <div class="toolkit"><div><h2>Make your next<br>comparison count.</h2><p>Use the saved execution records to evaluate a new search-value estimator. Compare success probabilities, noise-corrected gains and decision utility against matched historical baselines.</p><a class="button primary" href="downloads/SearchHorizonBench.zip" download>Download code & data <span aria-hidden="true">↓</span></a><div class="toolkit-notes"><span>Paired outcomes</span><span>Reusable scoring</span><span>Recorded costs</span></div></div><div class="code-panel"><div class="code-toolbar"><span>START FROM THE RELEASE</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre><code id="quickstart">unzip SearchHorizonBench.zip
+cd SearchHorizonBench
+python -m pip install -r requirements.txt
+python scripts/replay_examples.py</code></pre><div class="code-footer">Three offline examples replay forecast, policy and collection scores.</div></div></div>
+  </section>
+
+  <section id="paper" class="paper-section"><div class="wrap paper-layout">
+    <div><p class="eyebrow">THE PAPER</p><h2>SearchHorizonBench</h2><p class="paper-subtitle">A Benchmark for Search Value in AI Agents</p><p class="authors"><a href="mailto:jening@cs.cmu.edu">Jingjie Ning<sup>*</sup></a><a href="mailto:xueqil@cs.cmu.edu">Xueqi Li</a><a href="mailto:yibok@cs.cmu.edu">Yibo Kong</a></p><p class="paper-affiliation">Carnegie Mellon University<br><span>* Corresponding author</span></p><a class="text-link" href="assets/SearchHorizonBench.pdf">Read the manuscript <span aria-hidden="true">↗</span></a></div>
+    <div class="citation"><div class="citation-heading"><span>CITE THIS WORK</span><button class="copy" type="button" data-copy="bibtex">Copy BibTeX</button></div><pre><code id="bibtex">@misc{ning2026searchhorizonbench,
+  title = {SearchHorizonBench: A Benchmark
+    for Search Value in AI Agents},
+  author = {Ning, Jingjie and Li, Xueqi
+    and Kong, Yibo},
+  year = {2026},
+  note = {Manuscript and benchmark},
+  url = {https://ethanning.github.io/SearchHorizonBench/}
+}</code></pre></div>
+  </div></section>
+</main>
+<footer class="footer wrap"><a class="brand" href="#"><img src="assets/mark.svg" width="28" height="28" alt=""><span>SearchHorizon<span class="brand-light">Bench</span></span></a><p>Make the value of information measurable.</p><a href="mailto:jening@cs.cmu.edu">Contact <span aria-hidden="true">↗</span></a></footer>
+<noscript><div class="noscript wrap">The interactive price explorer uses JavaScript. All five prices and their uncertainty intervals are available in the <a href="assets/results.json">downloadable measurements</a>.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,183 @@
+{
+  "created_utc": "2026-10-15T12:29:07.561024+00:00",
+  "resource": "Native-policy value prediction",
+  "status": "Local benchmark export;no public upload.",
+  "development": {
+    "questions": 32,
+    "actor_units": 32,
+    "inputs": "development32_inputs.jsonl",
+    "draws": "development32_draws.jsonl"
+  },
+  "evaluation": {
+    "questions": 192,
+    "actor_units": 224,
+    "actor_frames": {
+      "deepseek-flash": 192,
+      "deepseek-v4-pro": 32
+    },
+    "inputs": "confirmation192_inputs.jsonl",
+    "draws": "confirmation192_draws.jsonl"
+  },
+  "action_mapping": {
+    "reuse": "THINK",
+    "new": "SEARCH"
+  },
+  "task_and_support_page_overlap": 0,
+  "contract": "Native public prefixes after first actual retrieval;bounded enabled-thinking8192totalcompletiontokens. SEARCHallowsup to3moresearches;THINKfinishesusingexistingevidence. SourcepolicyisFlash;bothactoridentitiesarefromoneproviderfamily.",
+  "measurement": "Maskedreferenceequivalenceusingfrozenbenchmarkparagraphs. Nullrewardmeansunresolved;sharedcaseIDsretainmeasurementdependence. RawEM/F1drawsarealsoexported.",
+  "measurement_sensitivity": {
+    "paired_judge_draws": "confirmation192_paired_judges_draws.jsonl",
+    "conservative_draws": "confirmation192_conservative_draws.jsonl",
+    "uncertain_answer_cases": 52,
+    "flagged_reference_questions": 12,
+    "use": "Primarydrawsreproduceregisteredanalysis. Conservativevariant additionally treatsallanswer-judgedisagreementsandreferenceflaggedquestionsasuncertain. Referenceflagsarefallible;alltasksandoriginalGoldarepreserved."
+  },
+  "timing": "Ownconfirmationforecastsaresealedbeforeeverynewactorsuffix;futureexternalforecastsonreleasedoutcomesareanofflinebenchmark,notfreshprospectiveconfirmation.",
+  "resources": "Reportedresourcescoverreturnedresponseusage. PhysicalHTTPattempts,interruptionandunknownusageareintheprojectledger. Savedbranchroutingexcludespredictoroverheadunlessseparatelyreported.",
+  "scorer": "scripts/score_value_forecasts.py",
+  "constant_effect_from_development": 0.0625,
+  "frozen_probability_priors": {
+    "THINK": 0.6328125,
+    "SEARCH": 0.6953125
+  },
+  "external_prediction_format": {
+    "unit_id": "Useexportedunit_id.",
+    "delta": "SignedSEARCH-minus-THINKsuccessprobabilityin[-1,1].",
+    "status": "ok,orinvalid_outputwithafrozenconstantfallback. Pendingtransportcannotbesilentlyscored."
+  },
+  "verification": [
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Flash_probability",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Flash_probability",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Flash_probability",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Flash_probability",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Flash_direct",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Flash_direct",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Flash_direct",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Flash_direct",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Pro_probability",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "Pro_probability",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Pro_probability",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "Pro_probability",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "zero",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "zero",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "zero",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "zero",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "development_constant",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "development_constant",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "development_constant",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "development_constant",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "development_ridge",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-flash",
+      "method": "development_ridge",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "development_ridge",
+      "authoritative_point_estimates_match": true
+    },
+    {
+      "actor_model": "deepseek-v4-pro",
+      "method": "development_ridge",
+      "scenario": "conservative",
+      "authoritative_point_estimates_match": true
+    }
+  ],
+  "primary_registration": "runs/native_policy_confirmation192_v1/protocol.json"
+}

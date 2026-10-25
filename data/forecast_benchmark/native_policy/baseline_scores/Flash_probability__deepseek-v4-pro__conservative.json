@@ -1,0 +1,74 @@
+{
+  "actor_model": "deepseek-v4-pro",
+  "questions": 32,
+  "constant_effect_baseline": 0.0625,
+  "forecast_statuses": {
+    "ok": 32
+  },
+  "metrics": {
+    "effect": {
+      "mean": 0.03125,
+      "stratified_question_bootstrap95": [
+        -0.015625,
+        0.0859375
+      ]
+    },
+    "squared_effect": {
+      "mean": 0.005208333333333331,
+      "stratified_question_bootstrap95": [
+        -0.007812500000000003,
+        0.020833333333333332
+      ]
+    },
+    "corrected_effect_MSE": {
+      "mean": 0.013108333333333331,
+      "stratified_question_bootstrap95": [
+        0.0010767968749999981,
+        0.024982369791666664
+      ]
+    },
+    "excess_risk_vs_constant": {
+      "mean": 0.0079,
+      "stratified_question_bootstrap95": [
+        -0.0014844531249999984,
+        0.018147148437499996
+      ]
+    },
+    "shared_assignment_risk_lower": {
+      "mean": -2.96875000000002e-05,
+      "stratified_question_bootstrap95": [
+        -0.012531328125000001,
+        0.012447226562499998
+      ]
+    },
+    "shared_assignment_risk_upper": {
+      "mean": 0.0099703125,
+      "stratified_question_bootstrap95": [
+        0.0005482421875000008,
+        0.020143867187499997
+      ]
+    },
+    "route_gain_vs_reuse": {
+      "mean": 0.0390625,
+      "stratified_question_bootstrap95": [
+        -0.0078125,
+        0.0859375
+      ]
+    },
+    "Brier_reuse": {
+      "mean": 0.23558749999999998,
+      "stratified_question_bootstrap95": [
+        0.142480546875,
+        0.330007734375
+      ]
+    },
+    "Brier_new": {
+      "mean": 0.21805,
+      "stratified_question_bootstrap95": [
+        0.138716875,
+        0.30159828125
+      ]
+    }
+  },
+  "interpretation": "Forecasts must be fixed independently of evaluation outcomes. Unresolved rewards usezero forpoint estimates andshared case assignments forriskbounds. Negative finite-sample moment estimates remainunclipped. Saved-branch routing excludes predictor overhead anddoesnot establishdeploymentbenefit."
+}
