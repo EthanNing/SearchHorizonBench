@@ -5,7 +5,7 @@ A buildless GitHub Pages site for **SearchHorizonBench: A Benchmark for Search V
 Serve the folder with a local HTTP server so the recorded decision data loads:
 
 ```bash
-python3 -m http.server 8080 --directory site
+python3 -m http.server 8080 --directory docs
 ```
 
 The website uses local Helvetica fonts, vector illustrations and recorded measurements. It makes no external requests. `assets/results.json` is a reduced export of `runs/decision_information_factorial_v2/analysis.json`; all five token prices and their component-bootstrap intervals are preserved.
